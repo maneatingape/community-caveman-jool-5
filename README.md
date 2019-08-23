@@ -4,6 +4,10 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 2](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v2) - 2019-08-23
+
+- Add Tylo lander
+
 ## [Version 1](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v1) - 2019-08-13
 
 - KSP 1.7.3 career mode
