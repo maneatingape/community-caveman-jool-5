@@ -2,7 +2,7 @@ ship = CHARLIE
 version = 1.7.3
 description = 
 type = VAB
-size = 3.10647416,14.7119522,2.97638464
+size = 3.10647321,14.7119522,2.97638273
 steamPublishedFileId = 0
 persistentId = 2416294387
 rot = 0,0,0,0
@@ -320,7 +320,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 2
+	sqor = 0
 	sepI = 0
 	attm = 0
 	sameVesselCollision = False
@@ -804,7 +804,7 @@ PART
 		name = ModuleCommand
 		isEnabled = True
 		hibernation = False
-		hibernateOnWarp = False
+		hibernateOnWarp = True
 		activeControlPointName = _default
 		stagingEnabled = True
 		EVENTS
@@ -1177,8 +1177,8 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 2
-	sidx = 0
-	sqor = 2
+	sidx = 1
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -1199,7 +1199,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -1675,7 +1675,7 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 4
+	sqor = 2
 	sepI = 0
 	attm = 0
 	sameVesselCollision = False
@@ -1695,7 +1695,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -2260,7 +2260,7 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 4
-	sidx = 1
+	sidx = 0
 	sqor = 1
 	sepI = 1
 	attm = 1
@@ -2283,7 +2283,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.978862345
+		scaleFactor = 0.978861988
 		height = 2.46986198
 		stagingEnabled = True
 		towerRot = -1.78813934E-07,0,0,-1
@@ -2367,7 +2367,7 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 4
-	sidx = 1
+	sidx = 0
 	sqor = 1
 	sepI = 1
 	attm = 1

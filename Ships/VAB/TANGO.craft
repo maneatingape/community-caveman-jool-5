@@ -61,7 +61,7 @@ PART
 		name = ModuleCommand
 		isEnabled = True
 		hibernation = False
-		hibernateOnWarp = False
+		hibernateOnWarp = True
 		activeControlPointName = _default
 		stagingEnabled = True
 		EVENTS
@@ -687,7 +687,7 @@ PART
 	part = radialDecoupler_4294471522
 	partName = Part
 	persistentId = 611436019
-	pos = 0.426371723,16.0740318,-0.069385156
+	pos = 0.426371723,16.0740318,-0.0693850964
 	attPos = 0,0,0
 	attPos0 = 3.77634173E-08,-0.00159579446,-0.327983737
 	rot = 0.50000006,0.499999851,0.500000298,0.5
@@ -893,7 +893,7 @@ PART
 	part = externalTankCapsule_4294464632
 	partName = Part
 	persistentId = 2161513016
-	pos = 0.426371813,15.6125679,-0.0716931969
+	pos = 0.426371813,15.6125679,-0.0716929585
 	attPos = 0,0,0
 	attPos0 = -0.461463392,-0.0023091624,8.94069174E-08
 	rot = 0.49999994,0.50000006,0.500000358,0.49999997
@@ -1015,7 +1015,7 @@ PART
 	part = externalTankCapsule_4294460238
 	partName = Part
 	persistentId = 2229046193
-	pos = 0.426372081,14.994566,-0.0701778084
+	pos = 0.426372081,14.994565,-0.07017757
 	attPos = 0,0,0
 	attPos0 = -0.617993534,0.00151560013,1.94486333E-07
 	rot = 0.49999994,0.50000006,0.500000358,0.49999997
@@ -1209,7 +1209,7 @@ PART
 	part = solarPanels5_4294429922
 	partName = Part
 	persistentId = 1584000314
-	pos = 0.508678913,16.7091885,-0.0684189945
+	pos = 0.508678973,16.7091885,-0.0684190542
 	attPos = 0,0,0
 	attPos0 = -0.0823066607,-0.000628769107,0.307172686
 	rot = 0.0922957733,0.701057434,0.701057434,0.0922960788
@@ -2128,7 +2128,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -2600,8 +2600,8 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 6
-	sidx = 0
-	sqor = 6
+	sidx = 1
+	sqor = 5
 	sepI = 4
 	attm = 0
 	sameVesselCollision = False
@@ -2621,7 +2621,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -2880,8 +2880,8 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 6
-	sidx = 1
-	sqor = 6
+	sidx = 0
+	sqor = 5
 	sepI = 4
 	attm = 0
 	sameVesselCollision = False
@@ -3098,8 +3098,8 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 6
-	sidx = 1
-	sqor = 6
+	sidx = 0
+	sqor = 5
 	sepI = 4
 	attm = 0
 	sameVesselCollision = False
