@@ -3,3 +3,7 @@
 # Vim swap files
 *.swp
 *.swo
+
+# Various KSP-generated stuff we don't want to save
+Backup/*
+**/Auto-Saved Ship.*
