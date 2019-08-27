@@ -204,7 +204,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 72.02000000000281
+		update = 86.939999999999841
 		version = 1.7.3
 		WEIGHTS
 		{
@@ -920,7 +920,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.7.3
-		UT = 76.700000000001879
+		UT = 89.999999999999233
 		activeVessel = 0
 		mapViewFiltering = -17410
 		commNetUIModeTracking = Network
@@ -960,6 +960,7 @@ GAME
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -995,6 +996,7 @@ GAME
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -1030,6 +1032,7 @@ GAME
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -1062,6 +1065,357 @@ GAME
 			lightB = 0
 			completedFirstEVA = False
 			hero = True
+			CAREER_LOG
+			{
+				flight = 0
+				0 = Training5,Kerbin
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Neilgee Kerman
+			gender = Male
+			type = Applicant
+			trait = Pilot
+			brave = 0.089742817
+			dumb = 0.63671422
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 161429.57523315429
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Lismy Kerman
+			gender = Female
+			type = Applicant
+			trait = Scientist
+			brave = 0.11361853
+			dumb = 0.961960852
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 142424.0549847412
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Trafred Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.871521473
+			dumb = 0.816414118
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 257250.46833007812
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Tedster Kerman
+			gender = Male
+			type = Applicant
+			trait = Pilot
+			brave = 0.981765509
+			dumb = 0.182349488
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 133531.7210003662
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Dipond Kerman
+			gender = Female
+			type = Applicant
+			trait = Scientist
+			brave = 0.473139465
+			dumb = 0.662674606
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 96775.295142822259
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Wenke Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.728265226
+			dumb = 0.32876274
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 141766.58504455566
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Summer Kerman
+			gender = Female
+			type = Applicant
+			trait = Pilot
+			brave = 0.75983727
+			dumb = 0.720299184
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 257563.37268798827
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Shannon Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.243061006
+			dumb = 0.829840362
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 187547.13962524413
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Seewin Kerman
+			gender = Male
+			type = Applicant
+			trait = Pilot
+			brave = 0.342860073
+			dumb = 0.977597237
+			badS = True
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 186180.20694702148
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Haiming Kerman
+			gender = Female
+			type = Applicant
+			trait = Engineer
+			brave = 0.0738888904
+			dumb = 0.679679871
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 104709.05826538085
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
 			CAREER_LOG
 			{
 				flight = 0

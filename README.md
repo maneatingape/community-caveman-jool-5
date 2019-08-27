@@ -4,6 +4,12 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 3](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v3) - 2019-08-27
+
+- Add 2nd docking port to Tylo lander "Tango"
+- Add crew transport vehicle "Charlie"
+- Increase all Kerbal experience to 5 stars
+
 ## [Version 2](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v2) - 2019-08-23
 
 - Add Tylo lander
