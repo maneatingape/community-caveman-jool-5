@@ -4,6 +4,12 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 4](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v4) - 2019-09-01
+
+- Add Laythe ascent vehicle "Lima"
+- Add fuel tender "Foxtrot"
+- Configure probe cores to auto-hibernate
+
 ## [Version 3](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v3) - 2019-08-27
 
 - Add 2nd docking port to Tylo lander "Tango"
