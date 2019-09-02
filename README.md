@@ -4,6 +4,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 5](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v5) - 2019-09-02
+
+- Add Kerbin return vehicle "Kilo"
+- Add orbital construction drone "Delta"
+
 ## [Version 4](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v4) - 2019-09-01
 
 - Add Laythe ascent vehicle "Lima"
@@ -18,7 +23,7 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 ## [Version 2](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v2) - 2019-08-23
 
-- Add Tylo lander
+- Add Tylo lander "Tango"
 
 ## [Version 1](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v1) - 2019-08-13
 
