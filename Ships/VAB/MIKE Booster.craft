@@ -1,8 +1,8 @@
-ship = SideBooster_R2
+ship = MIKE Booster
 version = 1.7.3
 description = 
 type = VAB
-size = 5.79002142,13.1936569,14.803196
+size = 5.79002333,13.1936588,14.8032169
 steamPublishedFileId = 0
 persistentId = 2777941776
 rot = 0,0,0,0
@@ -378,22 +378,18 @@ PART
 			OnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -439,7 +435,6 @@ PART
 			JettisonAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -545,7 +540,6 @@ PART
 			DecoupleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -566,17 +560,14 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -604,7 +595,7 @@ PART
 	part = MK1Fuselage_4294557500
 	partName = Part
 	persistentId = 4023349858
-	pos = 1.90228736,5.02008438,-1.14840865
+	pos = 1.90228736,5.02008438,-1.14840913
 	attPos = -0.429853499,-0.720566869,-0.2060422
 	attPos0 = -0.768958271,-0.0630104914,0.206041723
 	rot = -3.27825546E-07,-0.70710659,-0.707107127,1.78813934E-07
@@ -657,10 +648,10 @@ PART
 	part = fairingSize1_4294214972
 	partName = Part
 	persistentId = 4009970556
-	pos = 1.90228665,5.02009296,-2.28593802
+	pos = 1.90228665,5.02009296,-2.28593898
 	attPos = 0,0,0
 	attPos0 = -3.57627755E-07,-1.13750041,1.40070256E-07
-	rot = -3.57627812E-07,0.707106769,-0.707106888,5.96046448E-08
+	rot = -3.27825489E-07,0.707106769,-0.707106888,5.96046448E-08
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = -1,4.47034779E-07,1.19209275E-07,3.27825518E-07
 	mir = 1,1,1
@@ -720,7 +711,6 @@ PART
 			DeployFairingAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1000,10 +990,10 @@ PART
 	part = fairingSize1_4294130854
 	partName = Part
 	persistentId = 2587389913
-	pos = 1.90228617,5.02014256,-5.726017
+	pos = 1.90228474,5.02014542,-5.72602129
 	attPos = 0,0,0
 	attPos0 = 5.96037353E-08,3.43999982,-7.48634136E-07
-	rot = -3.57627812E-07,0.707106769,-0.707106888,5.96046448E-08
+	rot = -3.27825489E-07,0.707106769,-0.707106888,5.96046448E-08
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = 2.8421706E-14,1.19209318E-07,7.45056852E-08,1
 	mir = 1,1,1
@@ -1064,7 +1054,6 @@ PART
 			DeployFairingAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1344,10 +1333,10 @@ PART
 	part = MK1Fuselage_4294526488
 	partName = Part
 	persistentId = 2401009977
-	pos = 1.90228617,5.02011967,-9.90353203
+	pos = 1.90228474,5.02012157,-9.90353966
 	attPos = 0,0,0
 	attPos0 = -5.56559314E-07,4.17750072,-1.65834933E-06
-	rot = 3.57627812E-07,-0.707106769,0.707106888,-5.96046448E-08
+	rot = 3.27825489E-07,-0.707106769,0.707106888,-5.96046448E-08
 	attRot = -0.707106709,0,0,-0.707106709
 	attRot0 = -1.49011985E-08,2.84217094E-14,7.4505742E-08,-1
 	mir = 1,1,1
@@ -1394,10 +1383,10 @@ PART
 	part = fuelTank_4294204922
 	partName = Part
 	persistentId = 549884301
-	pos = 1.90228617,5.02015781,-11.7536306
+	pos = 1.90228426,5.02016163,-11.753643
 	attPos = 0,0,0
 	attPos0 = 4.24682867E-07,1.85000098,-8.98540748E-07
-	rot = -2.98022798E-08,0.707106829,-0.707106888,2.98023224E-08
+	rot = 4.97379915E-14,0.707106829,-0.707106829,5.96046448E-08
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = 1.49011896E-08,-4.52970994E-14,-7.45057491E-08,-1
 	mir = 1,1,1
@@ -1476,10 +1465,10 @@ PART
 	part = probeCoreOcto.v2_4294562984
 	partName = Part
 	persistentId = 1805773265
-	pos = 1.90228546,5.02021313,-12.9225283
+	pos = 1.90228307,5.02021885,-12.9225473
 	attPos = 0,0,0
 	attPos0 = 9.13215814E-08,1.16880822,-8.84007363E-07
-	rot = 8.94069174E-08,-0.707107008,-0.707106769,-5.96046448E-08
+	rot = 8.94069245E-08,-0.707106948,-0.707106769,-2.98023224E-08
 	attRot = 0.707106709,0,0,-0.707106709
 	attRot0 = 1,-7.45057491E-08,4.97379915E-14,-2.98023402E-08
 	mir = 1,1,1
@@ -1525,12 +1514,10 @@ PART
 			MakeReferenceToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			HibernateToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1554,22 +1541,18 @@ PART
 			CycleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1605,7 +1588,6 @@ PART
 			OpenKerbNetAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1627,7 +1609,6 @@ PART
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1670,7 +1651,7 @@ PART
 	part = fuelTank_4293660992
 	partName = Part
 	persistentId = 2554477087
-	pos = 0.502272129,5.02015209,-11.9536419
+	pos = 0.50226903,5.02015591,-11.9536591
 	attPos = 0.171223879,0.168355897,-8.81346068E-07
 	attPos0 = 1.22877586,0.031645447,-9.38391281E-07
 	rot = -0.49999997,0.500000238,0.499999791,0.500000238
@@ -1749,10 +1730,10 @@ PART
 	part = fuelTank_4293660494
 	partName = Part
 	persistentId = 1851170556
-	pos = 3.30229425,5.02015686,-11.9536409
+	pos = 3.30229259,5.02016068,-11.9536581
 	attPos = -0.171226263,0.168354079,1.8024964E-06
 	attPos0 = -1.22877514,0.0316461027,-9.75783564E-07
-	rot = 0.500000119,0.49999994,-0.500000298,0.49999994
+	rot = 0.50000006,0.499999911,-0.500000417,0.499999881
 	attRot = 2.605824E-08,5.49300552E-08,0.707106829,0.707106769
 	attRot0 = 0,0,1.99838366E-15,1
 	mir = 1,1,1
@@ -1828,10 +1809,10 @@ PART
 	part = SmallGearBay_4293648906
 	partName = Part
 	persistentId = 2291285368
-	pos = -0.497730374,4.22016239,-11.9536362
+	pos = -0.497733474,4.22016621,-11.9536524
 	attPos = -1.11040083E-06,0.0183948874,-0.223949671
 	attPos0 = -1.04936305E-06,0.981605113,-0.576047659
-	rot = -2.00636151E-07,-1.78813934E-07,2.03246557E-08,-1
+	rot = -2.11172875E-07,-1.78813934E-07,5.19347836E-08,-1
 	attRot = 0.5,0.5,0.49999997,0.49999997
 	attRot0 = -0.50000006,0.5,0.499999851,-0.50000006
 	mir = 1,1,1
@@ -1876,7 +1857,6 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1918,7 +1898,6 @@ PART
 			SteeringToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1940,7 +1919,6 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1979,7 +1957,6 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2049,17 +2026,14 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2151,10 +2125,10 @@ PART
 	part = SmallGearBay_4293645586
 	partName = Part
 	persistentId = 2465418557
-	pos = 4.30228996,4.22015285,-11.953599
+	pos = 4.30228853,4.22015572,-11.9536142
 	attPos = 0.093941547,0.0183956623,0.449394077
 	attPos0 = -0.0939460769,0.981604695,0.350604862
-	rot = 2.74018731E-07,4.47034836E-07,-1.9982312E-07,1.00000012
+	rot = 2.52945284E-07,4.47034836E-07,-1.7874973E-07,1.00000012
 	attRot = -0.49999994,0.49999997,0.49999997,-0.50000006
 	attRot0 = -0.5,-0.499999821,0.49999994,0.500000298
 	mir = 1,1,1
@@ -2199,7 +2173,6 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2241,7 +2214,6 @@ PART
 			SteeringToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2263,7 +2235,6 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2302,7 +2273,6 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2372,17 +2342,14 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2462,7 +2429,7 @@ PART
 	part = miniIntake_4294327400
 	partName = Part
 	persistentId = 1166937184
-	pos = 1.90228534,5.02021503,-13.1096153
+	pos = 1.90228295,5.02022076,-13.1096373
 	attPos = 0,0,0
 	attPos0 = 1.78414567E-07,-0.187081277,1.00001E-06
 	rot = -0.707106829,-2.98023224E-08,-3.61563934E-09,0.707106829
@@ -2507,7 +2474,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2582,32 +2548,26 @@ PART
 			UndockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DecoupleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			MakeReferenceToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2671,32 +2631,26 @@ PART
 			UndockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DecoupleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			MakeReferenceToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2709,10 +2663,10 @@ PART
 	part = miniFuselage_4294336504
 	partName = Part
 	persistentId = 4285801108
-	pos = 1.90226972,4.10121632,-12.0056648
+	pos = 1.90226686,4.10122013,-12.0056801
 	attPos = 0,0,0
 	attPos0 = -7.78247852E-07,0.252046734,0.918942332
-	rot = 0.500000298,0.49999994,-0.500000238,-0.499999702
+	rot = 0.500000417,0.49999994,-0.500000238,-0.499999702
 	attRot = 0,0,0,1
 	attRot0 = 2.98022975E-08,0.707106769,-3.25406475E-08,0.707106829
 	mir = 1,1,1
@@ -2761,10 +2715,10 @@ PART
 	part = miniJetEngine_4294535168
 	partName = Part
 	persistentId = 4242681331
-	pos = 1.90228176,4.10121632,-12.4744415
+	pos = 1.9022789,4.10122013,-12.4744568
 	attPos = 0,0,0
 	attPos0 = -1.63410459E-06,0.468750238,-2.6670989E-07
-	rot = -8.94071377E-08,0.707106709,0.707107008,-1.16229057E-06
+	rot = -5.96048082E-08,0.707106709,0.707107067,-1.13248825E-06
 	attRot = 0,-0.707106709,0.707106709,0
 	attRot0 = -0.707106888,3.07682598E-07,-0.707106709,-1.83178429E-07
 	mir = 1,1,1
@@ -2815,22 +2769,18 @@ PART
 			OnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2911,10 +2861,10 @@ PART
 	part = miniJetEngine_4293545872
 	partName = Part
 	persistentId = 1028718664
-	pos = 1.90228617,4.10122395,-11.5369158
+	pos = 1.90228426,4.10122776,-11.5369282
 	attPos = 0,0,0
 	attPos0 = -3.47184596E-07,-0.468749315,1.77806641E-07
-	rot = 0.707106709,2.98023224E-08,-5.03023841E-07,-0.707107067
+	rot = 0.707106709,2.98023224E-08,-5.32826107E-07,-0.707107186
 	attRot = 0,0.707106709,-0.707106709,0
 	attRot0 = 3.56750604E-07,0.707106471,-9.81357147E-08,0.707107186
 	mir = 1,1,1
@@ -2965,22 +2915,18 @@ PART
 			OnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -3053,7 +2999,7 @@ PART
 	part = batteryBankMini_4293609018
 	partName = Part
 	persistentId = 3844594711
-	pos = 1.9022845,5.02014256,-8.82606888
+	pos = 1.90228307,5.02014637,-8.82607841
 	attPos = 0,0,0
 	attPos0 = -3.21863126E-07,3.10000491,-2.20545189E-07
 	rot = -0.500000298,0.49999997,0.500000179,-0.499999791
@@ -3102,10 +3048,10 @@ PART
 	part = solarPanels5_4293607444
 	partName = Part
 	persistentId = 2965509487
-	pos = 1.90228593,5.62840557,-11.9563904
+	pos = 1.90228319,5.62840939,-11.9564047
 	attPos = 0,0,0
 	attPos0 = -8.44910062E-07,0.202751055,-0.608246684
-	rot = -0.707106709,-5.96046448E-08,1.15593636E-07,0.707107008
+	rot = -0.707106709,-2.98023224E-08,1.45395958E-07,0.707107067
 	attRot = 0,0,0,1
 	attRot0 = -4.47034019E-08,-1,1.4901164E-07,-1.34110365E-07
 	mir = 1,1,1
@@ -3153,19 +3099,16 @@ PART
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ExtendAction
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3178,7 +3121,7 @@ PART
 	part = SmallGearBay_4294520852
 	partName = Part
 	persistentId = 3021360609
-	pos = 2.30228925,4.22008324,-0.748408616
+	pos = 2.30228949,4.22008324,-0.748408735
 	attPos = -0.0952940881,-0.00644922256,-0.272233188
 	attPos0 = -0.304706186,0.406449109,-0.527767539
 	rot = -2.00197562E-07,-1.00000024,-7.79406548E-07,4.47034836E-07
@@ -3227,7 +3170,6 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3269,7 +3211,6 @@ PART
 			SteeringToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3291,7 +3232,6 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3330,7 +3270,6 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3400,17 +3339,14 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -3490,7 +3426,7 @@ PART
 	part = SmallGearBay_4293050172
 	partName = Part
 	persistentId = 2045924323
-	pos = 1.50228548,4.22008801,-0.748409212
+	pos = 1.50228524,4.22008801,-0.748409331
 	attPos = 0.0952942073,-0.00644993782,-0.272234201
 	attPos0 = 0.304706603,0.406448513,-0.527767658
 	rot = 2.31807505E-07,-1.00000024,-8.74237003E-07,-1.78813934E-07
@@ -3539,7 +3475,6 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3581,7 +3516,6 @@ PART
 			SteeringToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3603,7 +3537,6 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3642,7 +3575,6 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3712,17 +3644,14 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
