@@ -8,16 +8,20 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 950452302
+	ROCSeed = -1
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 1
+	launchID = 2
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = False
-	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP  - 
-	versionFull = 1.7.3.2594 (OSXPlayer)
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	versionFull = 1.7.3.2594 (WindowsPlayer x64)
 	versionCreated = 1.7.3.2594 (OSXPlayer)
+	RemovedROCs
+	{
+	}
 	PARAMETERS
 	{
 		preset = Custom
@@ -169,6 +173,119 @@ GAME
 	{
 		name = DeployedScience
 		scene = 7, 8, 5, 6
+		ScienceTimeDelay = 60
+		DataSendFailedTimeDelay = 600
+		SCIENCECLUSTERS
+		{
+		}
+		DIMINISHINGRETURNS
+		{
+			ENTRY
+			{
+				ExpCount = 1
+				Rate = 1
+			}
+			ENTRY
+			{
+				ExpCount = 2
+				Rate = 0.200000003
+			}
+			ENTRY
+			{
+				ExpCount = 3
+				Rate = 0.349999994
+			}
+			ENTRY
+			{
+				ExpCount = 4
+				Rate = 0.449999988
+			}
+			ENTRY
+			{
+				ExpCount = 5
+				Rate = 0.5
+			}
+		}
+		SEISMICENERGY
+		{
+			MinimumEnergyRequired = 3000
+			SeismicScienceProcessingDelay = 3
+			ENTRY
+			{
+				BodyName = Moho
+				Energy = 2.02E+09
+			}
+			ENTRY
+			{
+				BodyName = Eve
+				Energy = 9.78000036E+10
+			}
+			ENTRY
+			{
+				BodyName = Gilly
+				Energy = 1000000
+			}
+			ENTRY
+			{
+				BodyName = Kerbin
+				Energy = 4.1840001E+10
+			}
+			ENTRY
+			{
+				BodyName = Mun
+				Energy = 782000000
+			}
+			ENTRY
+			{
+				BodyName = Minmus
+				Energy = 21200000
+			}
+			ENTRY
+			{
+				BodyName = Duna
+				Energy = 3.62E+09
+			}
+			ENTRY
+			{
+				BodyName = Ike
+				Energy = 223000000
+			}
+			ENTRY
+			{
+				BodyName = Dres
+				Energy = 258000000
+			}
+			ENTRY
+			{
+				BodyName = Laythe
+				Energy = 2.3600001E+10
+			}
+			ENTRY
+			{
+				BodyName = Vall
+				Energy = 2.48999987E+09
+			}
+			ENTRY
+			{
+				BodyName = Tylo
+				Energy = 3.38999992E+10
+			}
+			ENTRY
+			{
+				BodyName = Bop
+				Energy = 29900000
+			}
+			ENTRY
+			{
+				BodyName = Pol
+				Energy = 8660000
+			}
+			ENTRY
+			{
+				BodyName = Eeloo
+				Energy = 894000000
+			}
+		}
 	}
 	SCENARIO
 	{
@@ -204,7 +321,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 86.939999999999841
+		update = 127.81999999999171
 		version = 1.7.3
 		WEIGHTS
 		{
@@ -222,6 +339,9 @@ GAME
 			PartTest = 30
 			GrandTour = 30
 			CollectScience = 30
+			ROCScienceRetrievalContract = 30
+			ROCScienceArmContract = 30
+			DeployedScienceContract = 30
 			Eeloo = 30
 			Dres = 30
 			Pol = 30
@@ -354,7 +474,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 10000000
+		funds = 10134400
 	}
 	SCENARIO
 	{
@@ -362,13 +482,28 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
+			RecordsAltitude
+			{
+				completed = 95.619999999998115
+				record = 70000
+			}
+			RecordsSpeed
+			{
+				reached = 113.03999999999465
+				record = 2272.8625706570979
+			}
+			RecordsDistance
+			{
+				completed = 95.619999999998115
+				record = 100000
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 0
+		sci = 14
 		Tech
 		{
 			id = start
@@ -382,6 +517,7 @@ GAME
 			part = GooExperiment
 			part = trussPiece1x
 			part = parachuteSingle
+			part = kv1Pod
 		}
 		Tech
 		{
@@ -444,6 +580,8 @@ GAME
 			part = radialLiquidEngine1-2
 			part = liquidEngine3.v2
 			part = liquidEngine3
+			part = Size1p5.Size1.Adapter.02
+			part = Size1p5.Tank.01
 		}
 		Tech
 		{
@@ -456,6 +594,7 @@ GAME
 			part = Decoupler.2
 			part = strutConnector
 			part = MK1CrewCabin
+			part = Decoupler.1p5
 		}
 		Tech
 		{
@@ -485,6 +624,7 @@ GAME
 			part = sasModule
 			part = winglet3
 			part = R8winglet
+			part = kv2Pod
 		}
 		Tech
 		{
@@ -512,6 +652,7 @@ GAME
 			part = solarPanels5
 			part = probeCoreOcto.v2
 			part = probeCoreOcto
+			part = DeployedSolarPanel
 		}
 		Tech
 		{
@@ -522,6 +663,7 @@ GAME
 			part = adapterSmallMiniTall
 			part = adapterSmallMiniShort
 			part = Separator.0
+			part = DeployedGoExOb
 		}
 		Tech
 		{
@@ -531,6 +673,8 @@ GAME
 			part = roverWheel2
 			part = ladder1
 			part = crewCabin
+			part = smallCargoContainer
+			part = DeployedCentralStation
 		}
 		Tech
 		{
@@ -543,6 +687,8 @@ GAME
 			part = radialRCSTank
 			part = landerCabinSmall
 			part = advSasModule
+			part = kv3Pod
+			part = Mk2Pod
 		}
 		Tech
 		{
@@ -554,6 +700,7 @@ GAME
 			part = LaunchEscapeSystem
 			part = landingLeg1
 			part = HeatShield2
+			part = HeatShield1p5
 		}
 		Tech
 		{
@@ -572,6 +719,11 @@ GAME
 			part = noseConeAdapter
 			part = CircularIntake
 			part = airScoop
+			part = noseconeTiny
+			part = noseconeVS
+			part = mediumHeliBlade
+			part = mediumPropeller
+			part = RotorEngine.02
 		}
 		Tech
 		{
@@ -588,6 +740,19 @@ GAME
 			part = rocketNoseCone
 			part = fairingSize1
 			part = pointyNoseConeA
+			part = EnginePlate1p5
+			part = Separator.1p5
+			part = Size1p5.Strut.Decoupler
+			part = fairingSize1p5
+			part = Size1to0ServiceModule
+			part = ServiceModule18
+			part = Tube1
+			part = Tube1p5
+			part = hinge.01.s
+			part = hinge.03.s
+			part = piston.01
+			part = piston.02
+			part = rotoServo.00
 		}
 		Tech
 		{
@@ -599,6 +764,12 @@ GAME
 			part = Rockomax32.BW
 			part = Rockomax16.BW
 			part = fuelLine
+			part = Size1p5.Size0.Adapter.01
+			part = Size1p5.Size1.Adapter.01
+			part = Size1p5.Size2.Adapter.01
+			part = Size1p5.Tank.02
+			part = Size1p5.Tank.03
+			part = Size1p5.Tank.05
 		}
 		Tech
 		{
@@ -611,6 +782,7 @@ GAME
 			part = microEngine
 			part = liquidEngineMini.v2
 			part = liquidEngineMini
+			part = monopropMiniSphere
 		}
 		Tech
 		{
@@ -621,6 +793,7 @@ GAME
 			part = liquidEngine2-2.v2
 			part = liquidEngine2-2
 			part = MassiveBooster
+			part = LiquidEngineLV-TX87
 		}
 	}
 	SCENARIO
@@ -632,7 +805,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 0
+		rep = 27.9999809
 	}
 	SCENARIO
 	{
@@ -920,11 +1093,3511 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.7.3
-		UT = 89.999999999999233
+		UT = 129.25999999999232
 		activeVessel = 0
 		mapViewFiltering = -17410
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
+		VESSEL
+		{
+			pid = dcb747323f104010b8d56ab7b5486aa9
+			persistentId = 3434068916
+			name = MIKE
+			type = Station
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = True
+			vesselSpawning = False
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = -2339766.8279927196
+			lct = 2339879.8679927196
+			lastUT = 113.03999999999465
+			distanceTraveled = 259309.20242174494
+			root = 0
+			lat = -0.072324395346229919
+			lon = 65.004361855727907
+			alt = 89458.468691299786
+			hgt = 89458.4688
+			nrm = -0.108477041,0.806658268,0.580977857
+			rot = -0.239698187,0.109944344,0.664222181,-0.699475586
+			CoM = -0.000735472888,-0.689757049,0.00439167023
+			stg = 1
+			prst = False
+			ref = 3218817504
+			ctrl = True
+			PQSMin = 2
+			PQSMax = 10
+			GroupOverride = 0
+			OverrideDefault = False,False,False,False
+			OverrideActionControl = 0,0,0,0
+			OverrideAxisControl = 0,0,0,0
+			OverrideGroupNames = ,,,
+			altDispState = ASL
+			cPch = 0.3720001
+			cHdg = -0.7099997
+			cMod = 0
+			ORBIT
+			{
+				SMA = 695379.46672120166
+				ECC = 0.035884588968418465
+				INC = 0.110692291702851
+				LPE = 37.481516533755254
+				LAN = 197.69004295846815
+				MNA = -1.2963467796314314
+				EPH = 113.03999999999465
+				REF = 1
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294343114
+				uid = 1646919845
+				mid = 166261906
+				persistentId = 2733543193
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, -1
+				attN = bottom, 1
+				mass = 0.0199999996
+				shielded = False
+				temp = 304.28360607054736
+				tempExt = 304.54881457571048
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3 (MIKE)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = Rockomax8BW
+				cid = 4294208956
+				uid = 2534289179
+				mid = 166261906
+				persistentId = 1713913442
+				launchID = 47
+				parent = 0
+				position = 0,-0.45499992370605469,0
+				rotation = 0,-1,0,0
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.5
+				shielded = False
+				temp = 304.33058398330041
+				tempExt = 305.08764664258479
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = Rockomax8BW
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 360
+					maxAmount = 360
+					flowState = False
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 440
+					maxAmount = 440
+					flowState = False
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = Rockomax16.BW
+				cid = 4294214620
+				uid = 762643755
+				mid = 166261906
+				persistentId = 3751238063
+				launchID = 47
+				parent = 1
+				position = 0,-1.8299999237060547,0
+				rotation = 0,-0.707106829,0,0.707106829
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 1
+				shielded = False
+				temp = 306.37305021360919
+				tempExt = 306.69903857389301
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = Rockomax16.BW
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 720
+					maxAmount = 720
+					flowState = False
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 880
+					maxAmount = 880
+					flowState = False
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine2-2.v2
+				cid = 4294225818
+				uid = 442838099
+				mid = 166261906
+				persistentId = 93932739
+				launchID = 47
+				parent = 2
+				position = 0,-2.7500009536743164,0
+				rotation = 0,-0.707106829,0,0.707106829
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 2
+				attN = bottom, -1
+				mass = 1.75
+				shielded = False
+				temp = 312.66171398260792
+				tempExt = 310.41114435223676
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 1
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = liquidEngine2-2.v2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					independentThrottle = False
+					independentThrottlePercentage = 0
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					includeinDVCalcs = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleThrottle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					AXISGROUPS
+					{
+						independentThrottlePercentage
+						{
+							axisGroup = None
+							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							axisInverted = None
+							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+						}
+						thrustPercentage
+						{
+							axisGroup = None
+							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							axisInverted = None
+							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					activejettisonName = Shroud
+					isJettisoned = True
+					shroudHideOverride = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					gimbalLimiter = 100
+					currentShowToggles = False
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					gimbalActive = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						LockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						FreeAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						TogglePitchAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleYawAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleRollAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleLookAtConstraint
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					animState = 0.385862082
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4293922782
+				uid = 3409445254
+				mid = 166261906
+				persistentId = 1724338476
+				launchID = 47
+				parent = 2
+				position = 1.1920928955078125E-07,-2.3776712417602539,-1.2074230909347534
+				rotation = 3.57627869E-07,0.707106829,-0.707106829,3.57627869E-07
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66771310670021
+				tempExt = 306.42810951456084
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 1377634143
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294585574
+				uid = 945472742
+				mid = 166261906
+				persistentId = 1613812015
+				launchID = 47
+				parent = 2
+				position = -1.0456559658050537,-2.3776712417602539,-0.60371410846710205
+				rotation = -0.353553116,0.612372696,-0.612372696,-0.353553116
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 4
+				sym = 6
+				sym = 7
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66724266230295
+				tempExt = 306.42795587186004
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 1147982958
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294585524
+				uid = 2094166647
+				mid = 166261906
+				persistentId = 770043595
+				launchID = 47
+				parent = 2
+				position = -1.0456559658050537,-2.3776712417602539,0.60371404886245728
+				rotation = -0.612372339,0.353553653,-0.353553653,-0.612372339
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 4
+				sym = 5
+				sym = 7
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66724299414687
+				tempExt = 306.42795598023696
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 3126783182
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294585474
+				uid = 3168042115
+				mid = 166261906
+				persistentId = 2605786685
+				launchID = 47
+				parent = 2
+				position = 0,-2.3776712417602539,1.2074184417724609
+				rotation = -0.707106829,3.57627869E-07,-3.57627869E-07,-0.707106829
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66725872287441
+				tempExt = 306.42796111709447
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 4224522420
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294585424
+				uid = 520083050
+				mid = 166261906
+				persistentId = 1238350747
+				launchID = 47
+				parent = 2
+				position = 1.0456562042236328,-2.3776712417602539,0.60371404886245728
+				rotation = -0.612372637,-0.353553176,0.353553176,-0.612372637
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 9
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66724816091897
+				tempExt = 306.42795766765954
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 4224522420
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294585374
+				uid = 2728205749
+				mid = 166261906
+				persistentId = 1265227087
+				launchID = 47
+				parent = 2
+				position = 1.0456562042236328,-2.3776712417602539,-0.60371136665344238
+				rotation = -0.353553772,-0.612372339,0.612372339,-0.353553772
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 2,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 306.66724647167138
+				tempExt = 306.4279571159671
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 3121777203
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4293495862
+				uid = 4124868020
+				mid = 166261906
+				persistentId = 1792833497
+				launchID = 47
+				parent = 1
+				position = 0,0.0050001144409179688,-0.88471138477325439
+				rotation = 8.42937027E-08,1.40487688E-09,-1.40487688E-09,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 11
+				sym = 12
+				srfN = srfAttach, 1,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 304.43000660244769
+				tempExt = 304.59367399548347
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Docked (same vessel)
+					dockUId = 1569612345
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294357320
+				uid = 3564071526
+				mid = 166261906
+				persistentId = 2442497148
+				launchID = 47
+				parent = 1
+				position = -0.766182541847229,0.0050001144409179688,0.4423559308052063
+				rotation = 4.0930189E-08,0.866025448,-7.37029282E-08,0.49999997
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 10
+				sym = 12
+				srfN = srfAttach, 1,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 304.43003740844091
+				tempExt = 304.59368424136983
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Docked (same vessel)
+					dockUId = 211412903
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294357270
+				uid = 1102440497
+				mid = 166261906
+				persistentId = 3900493557
+				launchID = 47
+				parent = 1
+				position = 0.76618260145187378,0.0050001144409179688,0.4423556923866272
+				rotation = -4.33635137E-08,0.866025388,-7.22980502E-08,-0.50000006
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 10
+				sym = 11
+				srfN = srfAttach, 1,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 304.10332636275797
+				tempExt = 303.48721863317519
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Docked (dockee)
+					dockUId = 414193842
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					DOCKEDVESSEL
+					{
+						vesselName = Core_B2
+						vesselType = Probe
+						rootUId = 1646919845
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4292655614
+				uid = 414193842
+				mid = 2340040097
+				persistentId = 3814823481
+				launchID = 48
+				parent = 12
+				position = 0.76640933752059937,0.2843974232673645,0.4426301121711731
+				rotation = -0.510599017,0.00125915313,-0.859818101,-0.000197306843
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 15
+				sym = 16
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.63334084271543
+				tempExt = 300.75234029997603
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Docked (docker)
+					dockUId = 1102440497
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					DOCKEDVESSEL
+					{
+						vesselName = Core_U
+						vesselType = Probe
+						rootUId = 3218817504
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = Rockomax32.BW
+				cid = 4293860786
+				uid = 2304285169
+				mid = 2340040097
+				persistentId = 3266531026
+				launchID = 48
+				parent = 13
+				position = -0.0064364075660705566,2.1264827251434326,0.023377060890197754
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, 23
+				attN = bottom, -1
+				mass = 2
+				shielded = False
+				temp = 300.48723155848541
+				tempExt = 299.77104213235373
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = Rockomax32.BW
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 1440
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 1760
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4293883416
+				uid = 1569612345
+				mid = 2340040097
+				persistentId = 3562348318
+				launchID = 48
+				parent = 14
+				position = -0.031128853559494019,0.2882581353187561,-0.86356246471405029
+				rotation = 0.999923825,-0.000800298993,-0.0122825904,-0.000991505221
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 13
+				sym = 16
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 4124868020
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4292655664
+				uid = 211412903
+				mid = 2340040097
+				persistentId = 3691271343
+				launchID = 48
+				parent = 14
+				position = -0.76355850696563721,0.28680932521820068,0.48022514581680298
+				rotation = 0.489324808,0.000458807219,-0.872100651,-0.00118885806
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 13
+				sym = 15
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 3564071526
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4293817660
+				uid = 3341070551
+				mid = 2340040097
+				persistentId = 255764861
+				launchID = 48
+				parent = 14
+				position = -0.036788344383239746,2.1821999549865723,-1.2154145240783691
+				rotation = -0.00811916869,0.707754076,-0.706351697,-0.00925096869
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 18
+				sym = 19
+				sym = 20
+				sym = 21
+				sym = 22
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 2745776528
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294479894
+				uid = 83532546
+				mid = 2340040097
+				persistentId = 1781200486
+				launchID = 48
+				parent = 14
+				position = -1.0944856405258179,2.1826503276824951,-0.56960248947143555
+				rotation = -0.360908478,0.608873427,-0.607092977,-0.361187339
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 17
+				sym = 19
+				sym = 20
+				sym = 21
+				sym = 22
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 2512989157
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294479844
+				uid = 1952476922
+				mid = 2340040097
+				persistentId = 1392004649
+				launchID = 48
+				parent = 14
+				position = -1.0640469789505005,2.1801679134368896,0.66929340362548828
+				rotation = -0.616992652,0.346845567,-0.345164239,-0.616343915
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 17
+				sym = 18
+				sym = 20
+				sym = 21
+				sym = 22
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 3749510722
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294479794
+				uid = 1486571485
+				mid = 2340040097
+				persistentId = 2521774761
+				launchID = 48
+				parent = 14
+				position = 0.024089157581329346,2.1772356033325195,1.2623773813247681
+				rotation = -0.707754195,-0.00811919849,0.00925100036,-0.706351578
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 21
+				sym = 22
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 3777915109
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294479744
+				uid = 328526849
+				mid = 2340040097
+				persistentId = 221393657
+				launchID = 48
+				parent = 14
+				position = 1.0817859172821045,2.1767852306365967,0.61656558513641357
+				rotation = -0.608873427,-0.360908449,0.361187458,-0.607092917
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 20
+				sym = 22
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 4106856900
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort3
+				cid = 4294479694
+				uid = 1139866305
+				mid = 2340040097
+				persistentId = 1027777681
+				launchID = 48
+				parent = 14
+				position = 1.051347017288208,2.1792671680450439,-0.62233036756515503
+				rotation = -0.346845716,-0.616992593,0.616343975,-0.345164239
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 3
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 17
+				sym = 18
+				sym = 19
+				sym = 20
+				sym = 21
+				srfN = srfAttach, 14,collider
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0199999996
+				shielded = False
+				temp = 300.43245198852446
+				tempExt = 299.72569924827405
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = dockingPort3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					acquireForceTweak = 100
+					crossfeed = True
+					stagingEnabled = False
+					state = Ready
+					dockUId = 1348406217
+					dockNodeIdx = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ToggleXFeedAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeAdapter
+				cid = 4292868756
+				uid = 2731419061
+				mid = 2340040097
+				persistentId = 1592283559
+				launchID = 48
+				parent = 14
+				position = -0.0021874904632568359,4.7414751052856445,0.028511285781860352
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 24
+				attN = bottom, 14
+				mass = 0.100000001
+				shielded = False
+				temp = 300.62291029260984
+				tempExt = 299.82451598417009
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = largeAdapter
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = ServiceBay.125
+				cid = 4292861436
+				uid = 84057813
+				mid = 2340040097
+				persistentId = 2973005255
+				launchID = 48
+				parent = 23
+				position = -0.00048160552978515625,5.7914724349975586,0.030573129653930664
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top2, 30
+				attN = bottom2, -1
+				attN = top, 25
+				attN = bottom, 23
+				mass = 0.100000001
+				shielded = False
+				temp = 301.08328596131707
+				tempExt = 299.86598000159029
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = ServiceBay.125
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = True
+					animTime = 0
+					animSpeed = -1
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					AXISGROUPS
+					{
+						deployPercent
+						{
+							axisGroup = None
+							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							axisInverted = None
+							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoBay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSeeThroughObject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleConductionMultiplier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = advSasModule
+				cid = 4294444148
+				uid = 4185414182
+				mid = 2340040097
+				persistentId = 2225819325
+				launchID = 48
+				parent = 24
+				position = 0.00032901763916015625,6.2904977798461914,0.031552791595458984
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 26
+				attN = bottom, 24
+				mass = 0.100000001
+				shielded = False
+				temp = 302.74284237928305
+				tempExt = 300.99129017301721
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = advSasModule
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = Running
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Activate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Deactivate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Toggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTankSmallFlat
+				cid = 4294415480
+				uid = 2200072804
+				mid = 2340040097
+				persistentId = 672528558
+				launchID = 48
+				parent = 25
+				position = 0.0011606216430664063,6.8020238876342773,0.032557249069213867
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, 27
+				attN = bottom, 25
+				mass = 0.0625
+				shielded = False
+				temp = 303.29390684536821
+				tempExt = 301.89966670826414
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = fuelTankSmallFlat
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					selectedVariant = White
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 37.623963226838796
+					maxAmount = 45
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 45.984843509695651
+					maxAmount = 55
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = pointyNoseConeA
+				cid = 4292852764
+				uid = 2741410757
+				mid = 2340040097
+				persistentId = 419763432
+				launchID = 48
+				parent = 26
+				position = 0.0026834011077880859,7.7395200729370117,0.034397602081298828
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = bottom01, 26
+				mass = 0.075000003
+				shielded = False
+				temp = 303.41701799237325
+				tempExt = 301.98423681117862
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = pointyNoseConeA
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5
+				cid = 4292843460
+				uid = 1824224086
+				mid = 2340040097
+				persistentId = 3433639908
+				launchID = 48
+				parent = 27
+				position = -0.38852071762084961,7.8099632263183594,0.044150352478027344
+				rotation = -0.11040432,-0.689793289,-0.109107256,0.707171798
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 29
+				srfN = srfAttach, 27,ConeCOL
+				mass = 0.00499999989
+				shielded = False
+				temp = 303.38509169497354
+				tempExt = 302.18743354866865
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = solarPanels5
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = 2340024.7079928545
+					currentRotation = (0, -6.057208E-07, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5
+				cid = 4292843186
+				uid = 4074325002
+				mid = 2340040097
+				persistentId = 4046882182
+				launchID = 48
+				parent = 27
+				position = 0.39411401748657227,7.8087291717529297,0.024919509887695313
+				rotation = -0.106603406,0.707130015,0.110671714,0.690184653
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 28
+				srfN = srfAttach, 27,ConeCOL
+				mass = 0.00499999989
+				shielded = False
+				temp = 303.38509169497354
+				tempExt = 302.18743354866865
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = solarPanels5
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = 2340024.7079928545
+					currentRotation = (0, -6.057208E-07, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = probeCoreOcto.v2
+				cid = 4292847336
+				uid = 3218817504
+				mid = 2340040097
+				persistentId = 1221256628
+				launchID = 48
+				parent = 24
+				position = -0.0003795623779296875,5.8543906211853027,0.030696392059326172
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = bottom, 31
+				attN = top, 24
+				mass = 0.100000001
+				shielded = True
+				temp = 300.69584582813553
+				tempExt = 300.69484465602932
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = _default
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					activeControlPointName = _default
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						MakeReferenceToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						HibernateToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = Running
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Activate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Deactivate
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						Toggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					standaloneToggle = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKerbNetAccess
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OpenKerbNetAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					canComm = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+						0 = Land,Kerbin
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 9.9816112020167758
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = batteryBankMini
+				cid = 4292844490
+				uid = 1703928786
+				mid = 2340040097
+				persistentId = 4260660249
+				launchID = 48
+				parent = 30
+				position = -0.00084543228149414063,5.5673098564147949,0.030132770538330078
+				rotation = 0.000991693698,0.0122825941,-0.000800300622,0.999923825
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = top, 30
+				attN = bottom, -1
+				mass = 0.00999999978
+				shielded = True
+				temp = 300.69569683840115
+				tempExt = 300.69469952925073
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/blorbs
+				rTrf = batteryBankMini
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 199.63222404033422
+					maxAmount = 200
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2351001.46228942
+				Gear = False, 2342804.52799544
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2344797.46947679
+				Brakes = False, 2351090.1022895
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 4.11993051E-06
+				yaw = 1.29933951E-05
+				roll = -1.4664912E-06
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				CommNetVessel
+				{
+					controlState = ProbeFull
+					canComm = True
+				}
+				AxisGroupsModule
+				{
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
@@ -948,7 +4621,7 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = -1
+			idx = 0
 			extraXP = 0
 			hasHelmetOn = False
 			hasNeckRingOn = False
@@ -956,15 +4629,17 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
 				0 = Training5,Kerbin
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 1
 			}
 		}
 		KERBAL
@@ -992,6 +4667,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -1028,6 +4704,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -1064,6 +4741,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -1100,6 +4778,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1135,6 +4814,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1170,6 +4850,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1205,6 +4886,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1240,6 +4922,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1275,6 +4958,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1310,6 +4994,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1345,6 +5030,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1380,6 +5066,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1415,6 +5102,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
+			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -1429,5 +5117,13 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = False
+		MESSAGE
+		{
+			title = World First Milestones
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken an altitude record of 500m.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 25m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 25m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n
+			color = 3
+			icon = 6
+			read = False
+		}
 	}
 }
