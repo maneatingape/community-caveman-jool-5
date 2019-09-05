@@ -4,6 +4,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 7](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v7) - 2019-09-05
+
+- Circularize MIKE orbit to 80km x 80km
+- Dock DELTA with MIKE
+
 ## [Version 6](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v6) - 2019-09-04
 
 - Add orbit calculation Python scripts
