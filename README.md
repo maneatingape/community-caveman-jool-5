@@ -4,6 +4,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 8](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v8) - 2019-09-06
+
+- Tweak MIKE orbit to 80.3km x 80.3km
+- Dock FOXTROT with MIKE
+
 ## [Version 7](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v7) - 2019-09-05
 
 - Circularize MIKE orbit to 80km x 80km
