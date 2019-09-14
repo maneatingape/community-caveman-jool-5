@@ -651,7 +651,7 @@ GAME
 				exp = True
 				PARAM
 				{
-					name = VesselSystemsParameter
+					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
 					part = liquidEngine1-2
@@ -701,7 +701,7 @@ GAME
 				exp = True
 				PARAM
 				{
-					name = SpecificOrbitParameter
+					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
 					part = Separator.2
@@ -820,7 +820,7 @@ GAME
 				{
 					name = SurveyWaypointParameter
 					state = Incomplete
-					values = 8800,0,3,3,0
+					values = 0,0,0,0,0
 					targetBody = 1
 					actionDescription = Measure the temperature
 					experiment = temperatureScan
@@ -903,7 +903,7 @@ GAME
 				exp = True
 				PARAM
 				{
-					name = VesselSystemsParameter
+					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
 					part = sepMotor1
@@ -1948,7 +1948,7 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleEnginesFX
+					name = ModuleEngines
 					isEnabled = True
 					independentThrottle = False
 					independentThrottlePercentage = 0
@@ -5737,7 +5737,7 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleEnginesFX
+					name = ModuleEngines
 					isEnabled = True
 					independentThrottle = False
 					independentThrottlePercentage = 0
@@ -9096,11 +9096,11 @@ GAME
 				rotation = 2.7767701E-08,0.866025805,7.486193E-09,0.500000238
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 1
+				istg = -1
 				resPri = 0
 				dstg = 2
 				sqor = -1
-				sepI = 2
+				sepI = -1
 				sidx = -1
 				attm = 0
 				sameVesselCollision = False
@@ -9146,30 +9146,8 @@ GAME
 					{
 					}
 				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 90
-					maxAmount = 90
-					flowState = False
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 110
-					maxAmount = 110
-					flowState = False
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
 			}
-			PART
+			ACTIONGROUPS
 			{
 				Stage = False, 115305.24189714
 				Gear = False, 0
