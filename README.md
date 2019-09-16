@@ -4,6 +4,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 12](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v12) - 2019-09-16
+
+- Dock 3rd TANGO with MIKE
+- Dock 4th FOXTROT with MIKE
+
 ## [Version 11](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v11) - 2019-09-15
 
 - Dock 2nd TANGO with MIKE
