@@ -4,6 +4,10 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 15](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v15) - 2019-09-26
+
+- Dock KILOLIMA fuel sections with MIKE
+
 ## [Version 14](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v14) - 2019-09-21
 
 - Dock 7th FOXTROT with MIKE
