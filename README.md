@@ -4,6 +4,13 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 16](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v16) - 2019-09-27
+
+- Dock LIMA with MIKE
+- De-orbit debris
+- Timewarp to fix SAS glitch
+- Contract cleanup to remove markers cluttering map display
+
 ## [Version 15](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v15) - 2019-09-26
 
 - Dock KILOLIMA fuel sections with MIKE
