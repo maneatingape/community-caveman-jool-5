@@ -1,6 +1,9 @@
 # Description
 
-Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerbalspaceprogram.com/index.php?/topic/187070-community-caveman-jool-5-mission/)
+![Badge](badges/badge_medium.png)
+
+Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerbalspaceprogram.com/index.php?/topic/187070-community-caveman-jool-5-mission/)  
+[Link](https://imgur.com/Ojh0FUP.png) to the badge for forum signature 
 
 # Changelog
 
