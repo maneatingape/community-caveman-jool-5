@@ -7,6 +7,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 17](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v17) - 2019-10-01
+
+- Dock KILO with MIKE
+- Add mission badges
+
 ## [Version 16](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v16) - 2019-09-27
 
 - Dock LIMA with MIKE
