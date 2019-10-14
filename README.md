@@ -7,6 +7,10 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 18](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v18) - 2019-10-14
+
+- MIKE to high Jool orbit
+
 ## [Version 17](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v17) - 2019-10-01
 
 - Dock KILO with MIKE
