@@ -1,8 +1,35 @@
 # Description
 
-Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerbalspaceprogram.com/index.php?/topic/187070-community-caveman-jool-5-mission/)
+![Badge](badges/badge_medium.png)
+
+Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerbalspaceprogram.com/index.php?/topic/187070-community-caveman-jool-5-mission/)  
+[Link](https://imgur.com/Ojh0FUP.png) to the badge for forum signature 
 
 # Changelog
+
+## [Version 18](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v18) - 2019-10-14
+
+- MIKE to high Jool orbit
+
+## [Version 17](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v17) - 2019-10-01
+
+- Dock KILO with MIKE
+- Add mission badges
+
+## [Version 16](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v16) - 2019-09-27
+
+- Dock LIMA with MIKE
+- De-orbit debris
+- Timewarp to fix SAS glitch
+- Contract cleanup to remove markers cluttering map display
+
+## [Version 15](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v15) - 2019-09-26
+
+- Dock KILOLIMA fuel sections with MIKE
+
+## [Version 14](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v14) - 2019-09-21
+
+- Dock 7th FOXTROT with MIKE
 
 ## [Version 13](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v13) - 2019-09-18
 
