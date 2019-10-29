@@ -1,6 +1,6 @@
 GAME
 {
-	version = 1.7.3
+	version = 1.8.0
 	Title = Community Caveman Jool 5 (CAREER)
 	Description = No description available.
 	linkURL = 
@@ -17,7 +17,7 @@ GAME
 	defaultSPHLaunchSite = Runway
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
-	versionFull = 1.7.3.2594 (WindowsPlayer x64)
+	versionFull = 1.8.0.2686 (WindowsPlayer x64)
 	versionCreated = 1.7.3.2594 (OSXPlayer)
 	RemovedROCs
 	{
@@ -321,27 +321,27 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 45203714.217645742
-		version = 1.7.3
+		update = 45052691.704633407
+		version = 1.8.0
 		WEIGHTS
 		{
-			TourismContract = 30
-			SurveyContract = 10
-			StationContract = 30
+			ROCScienceRetrievalContract = 30
+			ROCScienceArmContract = 30
+			DeployedScienceContract = 30
 			SentinelContract = 30
-			SatelliteContract = 10
-			ISRUContract = 30
-			ExplorationContract = 30
-			BaseContract = 23
-			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
 			PartTest = 10
 			GrandTour = 30
 			CollectScience = 28
-			ROCScienceRetrievalContract = 30
-			ROCScienceArmContract = 30
-			DeployedScienceContract = 30
+			TourismContract = 30
+			SurveyContract = 10
+			StationContract = 30
+			SatelliteContract = 10
+			ISRUContract = 30
+			ExplorationContract = 30
+			BaseContract = 23
+			ARMContract = 30
 			Eeloo = 30
 			Dres = 30
 			Pol = 30
@@ -364,71 +364,41 @@ GAME
 		{
 			CONTRACT
 			{
-				guid = 7cf4c95f-d09d-4463-a0d7-24ac22d5fc3d
-				type = TourismContract
+				guid = 182a753d-47ce-4153-994c-e90ab4006a05
+				type = CollectScience
 				prestige = 0
-				seed = -1543693346
+				seed = -2102157929
 				state = Offered
 				viewed = Unseen
-				agent = Integrated Integrals
-				agentName = Integrated Integrals
+				agent = Ionic Symphonic Protonic Electronics
+				agentName = Ionic Symphonic Protonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
-				values = 128316.832065582,273314852.29969,0,0,0,0,19.42857,10,45332024.4979526,0,0,0
-				preposition = around Jool
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Sigrey Kerman|Leberry Kerman
+				values = 129600,46008000,7650,18700,7650,3,5,3,45107178.5981548,0,0,0
+				body = 1
+				location = Space
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = CollectScience
 					state = Incomplete
-					allowPartialFailure = True
-					values = 58500,0,0,0,0
-					kerbalName = Sigrey Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 19500,0,0,0,0
-						targetBody = 8
-						targetType = Orbit
-						kerbalName = Sigrey Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 58500,0,0,0,0
-					kerbalName = Leberry Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 19500,0,0,0,0
-						targetBody = 8
-						targetType = Flyby
-						kerbalName = Leberry Kerman
-					}
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
 				}
 			}
 			CONTRACT
 			{
-				guid = 2472aa3f-f93d-4256-ac83-70008277cce4
+				guid = 81b8486e-618a-4c8a-bb1d-65e8649c673f
 				type = CollectScience
-				prestige = 0
-				seed = -1543693338
+				prestige = 1
+				seed = -2102157897
 				state = Offered
 				viewed = Unseen
-				agent = Rokea Inc
-				agentName = Rokea Inc
+				agent = WinterOwl Aircraft Emporium
+				agentName = WinterOwl Aircraft Emporium
 				deadlineType = Floating
 				expiryType = Floating
-				values = 19593.6130222976,250406374.424963,49168.0768307877,126198.058134648,49640.846366787,3,4.900602,3,45223301.2789093,0,0,0
+				values = 102857.149600983,262902874.380112,50774.3369489908,136526.553421975,63112.5013679266,3,6.105487,2.830189,45080435.7477558,0,0,0
 				body = 8
 				location = Space
 				PARAM
@@ -442,239 +412,18 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 832ae92f-c31b-45e4-a6c3-6fe5b3a85db2
-				type = ExplorationContract
-				prestige = 0
-				seed = -1543693335
-				state = Offered
-				viewed = Unseen
-				agent = Kerbin World-Firsts Record-Keeping Society
-				agentName = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 108000,0,2240,4160,2240,1,2,0,45311707.6658871,0,0,0
-				targetBody = 1
-				bodyRatio = 0.571428597
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 6400,0,1,2,0
-					targetBody = 1
-					targetType = SCIENCE
-				}
-			}
-			CONTRACT
-			{
-				guid = 00b83964-dc4d-4f86-a28c-24bf8f7e7548
-				type = StationContract
-				prestige = 0
-				seed = -1543693330
+				guid = 32f9b9c2-9b0a-4aec-9688-2bd199186be4
+				type = SatelliteContract
+				prestige = 1
+				seed = -2102157887
 				state = Offered
 				viewed = Unseen
 				agent = Research & Development Department
 				agentName = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,64411200,33600,87150,33600,0,19,9,45333307.6658871,0,0,0
+				values = 129600,46008000,42000,107625,42000,5,16,9,45107178.5981548,0,0,0
 				targetBody = 1
-				capacity = 5
-				contextual = False
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = station
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = has an antenna|has a docking port|can generate power
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 5
-				}
-				PARAM
-				{
-					name = CrewTraitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetTrait = Pilot
-					targetCount = 1
-					vesselDescription = station
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetSituation = ORBITING
-					noun = station
-					finalObjective = False
-				}
-			}
-			CONTRACT
-			{
-				guid = ec3189ce-e230-4242-bd2e-3f319c7783c3
-				type = StationContract
-				prestige = 0
-				seed = -1543693329
-				state = Offered
-				viewed = Unseen
-				agent = O.M.B. Demolition Enterprises
-				agentName = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,257644800,128000,348599.984169006,134399.993896484,0,17.14286,9,45225307.6658871,0,0,0
-				targetBody = 0
-				capacity = 5
-				contextual = False
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = station
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = has an antenna|has a docking port|can generate power
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 5
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 0
-					targetSituation = ORBITING
-					noun = station
-					finalObjective = False
-				}
-			}
-			CONTRACT
-			{
-				guid = cb7a8b26-f535-4503-90db-53ec1a6deb6b
-				type = TourismContract
-				prestige = 0
-				seed = -1543693320
-				state = Offered
-				viewed = Unseen
-				agent = Periapsis Rocket Supplies Co
-				agentName = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,184032000,0,0,0,0,20,10,45225307.6658871,0,0,0
-				preposition = around The Sun
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Tanbree Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 78000,0,0,0,0
-					kerbalName = Tanbree Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 13000,0,0,0,0
-						targetBody = 0
-						targetType = Orbit
-						kerbalName = Tanbree Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 13000,0,0,0,0
-						targetBody = 0
-						targetType = Flyby
-						kerbalName = Tanbree Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = ae529654-e164-4a0d-9559-1c8ae41f4e99
-				type = TourismContract
-				prestige = 0
-				seed = -1543693318
-				state = Offered
-				viewed = Unseen
-				agent = Sean's Cannery
-				agentName = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 125825.248718262,178671853.179932,0,0,0,0,19.04762,10,45329532.9146053,0,0,0
-				preposition = around The Sun
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Lisus Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 39000,0,0,0,0
-					kerbalName = Lisus Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 13000,0,0,0,0
-						targetBody = 0
-						targetType = Flyby
-						kerbalName = Lisus Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 9dfe6211-e1c6-412c-8296-4f1271120b9c
-				type = SatelliteContract
-				prestige = 1
-				seed = -1543693316
-				state = Offered
-				viewed = Unseen
-				agent = O.M.B. Demolition Enterprises
-				agentName = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,184032000,84000,236775.00513196,92400.0020027161,11,10.90909,6,45268507.6658871,0,0,0
-				targetBody = 0
 				deviation = 5
 				orbitType = 6
 				placementMode = 0
@@ -695,15 +444,15 @@ GAME
 					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					TargetBody = 0
+					TargetBody = 1
 					deviationWindow = 5
 					orbitType = 6
-					inclination = 6.7559269307858756
-					eccentricity = 0.3055869897786696
-					sma = 29844567203.14397
-					lan = 281.83667451228791
-					argumentOfPeriapsis = 2.3818140115506337
-					meanAnomalyAtEpoch = -0.61149117219671367
+					inclination = 22.886469639490141
+					eccentricity = 0.36603442311338197
+					sma = 12891244.687571328
+					lan = 345.60210836380838
+					argumentOfPeriapsis = 293.6097857419449
+					meanAnomalyAtEpoch = 0.052508086009769618
 					epoch = 0
 				}
 				PARAM
@@ -712,9 +461,9 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					article = a
-					partDescription = mystery goo unit
+					partDescription = thermometer
 					vesselDescription = satellite
-					partNames = GooExperiment
+					partNames = sensorThermometer
 				}
 				PARAM
 				{
@@ -726,140 +475,183 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 97d4ca6f-d188-436c-bb16-f1f747838a0d
-				type = PartTest
-				prestige = 1
-				seed = -1543693315
+				guid = 5d46ed90-f2cd-4ad3-9524-fc8e2b99cdaf
+				type = SurveyContract
+				prestige = 0
+				seed = -422556993
 				state = Offered
 				viewed = Unseen
-				agent = Rockomax Conglomerate
-				agentName = Rockomax Conglomerate
+				agent = Goliath National Products
+				agentName = Goliath National Products
 				deadlineType = Floating
 				expiryType = Floating
-				values = 34754.6251178843,44416410.9006561,116600.007400036,320650.027300001,125928.010093689,6,12.55986,9,45238462.2910049,0,0,0
-				part = smallRadialEngine.v2
-				haul = False
-				dest = 8
-				sit = ORBITING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = smallRadialEngine.v2
-					body = Jool
-					situation = ORBITING
-					uniqueID = 0.71421247474579719
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 8
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ORBITING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 320000
-						maxAlt = 330000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 94bc28d9-43b1-443e-be27-be3d94586985
-				type = BaseContract
-				prestige = 1
-				seed = -1543693311
-				state = Offered
-				viewed = Unseen
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				agentName = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 19285.7141017914,115019998.903084,93103.440284729,258879.293736096,118800.002574921,0,35.2056,20.19231,45222993.3799888,0,0,0
-				targetBody = 2
-				capacity = 5
+				values = 86400,276048000,180000,333899.984836578,188999.991416931,0,8.571429,9,45094836.3713838,0,0,0
+				targetBody = 8
+				centerLatitude = -11.167635063845223
+				centerLongitude = 0.39906498435841203
+				dataName = atmospheric
+				anomalyName = abnormalities
+				reportName = readings
+				locationName = Jool^N
+				focusedSurvey = False
+				targetBand = HIGH
 				contextual = False
 				PARAM
 				{
-					name = VesselSystemsParameter
+					name = SurveyWaypointParameter
 					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = outpost
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = has an antenna|has a docking port|can generate power
-					launchID = 0
+					values = 52800,0,3,3,0
+					targetBody = 8
+					actionDescription = Take pressure readings
+					experiment = barometerScan
+					flightThreshold = 112800
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1396871470
+					wpIndex = 0
+					wpTexture = pressure
+					wpLatitude = -11.415506656301002
+					wpLongitude = -0.17027971877114115
+					wpLandlocked = False
+					wpNavigationId = 7ce928ce-9b69-4aa6-a5b3-870de0104df2
 				}
 				PARAM
 				{
-					name = CrewCapacityParameter
+					name = SurveyWaypointParameter
 					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 5
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 4000
-					resourceName = LiquidFuel
-					resourceTitle = liquid fuel
-					vesselName = outpost
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 2
-					targetSituation = LANDED
-					noun = outpost
-					finalObjective = False
+					values = 52800,0,3,3,0
+					targetBody = 8
+					actionDescription = Take pressure readings
+					experiment = barometerScan
+					flightThreshold = 123600
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1396871470
+					wpIndex = 1
+					wpTexture = pressure
+					wpLatitude = -11.135261408826114
+					wpLongitude = 0.73706204614734294
+					wpLandlocked = False
+					wpNavigationId = 0db8f8a8-972b-47fa-89c1-5a0025b54c20
 				}
 			}
 			CONTRACT
 			{
-				guid = 06da6866-43eb-48a1-ab62-45c6995f8760
-				type = SatelliteContract
-				prestige = 1
-				seed = -1543693308
+				guid = 9547e72a-c827-4008-86fe-a7c28fc8e829
+				type = TourismContract
+				prestige = 0
+				seed = -422556983
 				state = Offered
 				viewed = Unseen
-				agent = StrutCo
-				agentName = StrutCo
+				agent = Integrated Integrals
+				agentName = Integrated Integrals
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,184032000,88200,248611.005388498,97020.0021028519,14,12.72727,8,45268507.6658871,0,0,0
-				targetBody = 0
+				values = 64158.4160327911,273314852.29969,0,0,0,0,19.42857,10,45072594.7874166,0,0,0
+				preposition = around Jool
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Huduki Kerman|Thompbin Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 58500,0,0,0,0
+					kerbalName = Huduki Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 8
+						targetType = Flyby
+						kerbalName = Huduki Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 58500,0,0,0,0
+					kerbalName = Thompbin Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 8
+						targetType = Flyby
+						kerbalName = Thompbin Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = f8245719-adfe-4d73-923f-4c7b04a91221
+				type = TourismContract
+				prestige = 0
+				seed = -1453468487
+				state = Offered
+				viewed = Unseen
+				agent = Kerlington Model Rockets and Paper Products Inc
+				agentName = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,184032000,0,0,0,0,20,10,45158964.1187927,0,0,0
+				preposition = around The Sun
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Newny Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 78000,0,0,0,0
+					kerbalName = Newny Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 13000,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Newny Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 13000,0,0,0,0
+						targetBody = 0
+						targetType = Flyby
+						kerbalName = Newny Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 3b6147bd-fc69-4311-97ac-7c819ca87927
+				type = SatelliteContract
+				prestige = 1
+				seed = -1690645541
+				state = Offered
+				viewed = Unseen
+				agent = Moving Parts Experts Group
+				agentName = Moving Parts Experts Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 59933.4026097457,85105431.705839,46781.2774092865,131863.269955567,50450.3992429733,14,12.01114,7.407407,45089644.1308056,0,0,0
+				targetBody = 2
 				deviation = 5
 				orbitType = 6
 				placementMode = 0
@@ -880,15 +672,15 @@ GAME
 					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					TargetBody = 0
+					TargetBody = 2
 					deviationWindow = 5
 					orbitType = 6
-					inclination = 3.0481237939502104
-					eccentricity = 0.30994204049133778
-					sma = 36804063286.583878
-					lan = 331.76587531890993
-					argumentOfPeriapsis = 340.94745597846219
-					meanAnomalyAtEpoch = -2.3247580595606321
+					inclination = 174.94269787571812
+					eccentricity = 0.069384166776760264
+					sma = 658171.02302950993
+					lan = 326.87132666207458
+					argumentOfPeriapsis = 47.654660403568407
+					meanAnomalyAtEpoch = -0.6704189101931991
 					epoch = 0
 				}
 				PARAM
@@ -917,6 +709,259 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 0fc49347-e1df-484c-a094-adce5828ded5
+				type = PartTest
+				prestige = 0
+				seed = -2022625932
+				state = Offered
+				viewed = Unseen
+				agent = Kerbodyne
+				agentName = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,2700,8000,2700,1,1,1,45073258.9845745,0,0,0
+				part = MassiveBooster
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = MassiveBooster
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.40171906510448069
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 29b91458-845b-46c2-af13-c162c1676f6b
+				type = StationContract
+				prestige = 0
+				seed = -2022625928
+				state = Offered
+				viewed = Unseen
+				agent = Kerbodyne
+				agentName = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,386467200,211200,547800,211200,0,20,10,45138058.9845745,0,0,0
+				targetBody = 8
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = station
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = has an antenna|has a docking port|can generate power
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 2000
+					resourceName = LiquidFuel
+					resourceTitle = liquid fuel
+					vesselName = station
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 8
+					targetSituation = ORBITING
+					noun = station
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = d693fb30-a53f-4219-a4d7-15512dbb5376
+				type = PartTest
+				prestige = 0
+				seed = -48959943
+				state = Offered
+				viewed = Unseen
+				agent = O.M.B. Demolition Enterprises
+				agentName = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,1800,4724.99978542328,1889.99991416931,1,0.952381,1,45095891.7046334,0,0,0
+				part = HeatShield0
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = HeatShield0
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.86182281042534115
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 13c7776d-556c-4dd5-8a45-48708e54241d
+				type = TourismContract
+				prestige = 1
+				seed = -48959941
+				state = Offered
+				viewed = Unseen
+				agent = Rockomax Conglomerate
+				agentName = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 52131.9376768264,222082054.50328,0,0,0,0,26.16638,12,45104823.6423102,0,0,0
+				preposition = around The Sun
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Gerhat Kerman|Neddo Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 219375,0,0,0,0
+					kerbalName = Gerhat Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Gerhat Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 8
+						targetType = Orbit
+						kerbalName = Gerhat Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 8
+						targetType = Flyby
+						kerbalName = Gerhat Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 219375,0,0,0,0
+					kerbalName = Neddo Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 0
+						targetType = Flyby
+						kerbalName = Neddo Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 8
+						targetType = Orbit
+						kerbalName = Neddo Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Neddo Kerman
+					}
 				}
 			}
 		}
@@ -1053,7 +1098,7 @@ GAME
 				reached = 43989514.102196217
 				Orbit
 				{
-					completed = 45009832.295924038
+					completed = 45009725.765611149
 					vessel
 					{
 						name = MIKE
@@ -1138,6 +1183,7 @@ GAME
 			part = sensorBarometer
 			part = HeatShield1
 			part = HeatShield0
+			part = ServiceBay.125.v2
 		}
 		Tech
 		{
@@ -1292,6 +1338,7 @@ GAME
 			part = mediumHeliBlade
 			part = mediumPropeller
 			part = RotorEngine.02
+			part = mediumFanBlade
 		}
 		Tech
 		{
@@ -1321,6 +1368,7 @@ GAME
 			part = piston.01
 			part = piston.02
 			part = rotoServo.00
+			part = Size.1.5.Cone
 		}
 		Tech
 		{
@@ -1351,6 +1399,7 @@ GAME
 			part = liquidEngineMini.v2
 			part = liquidEngineMini
 			part = monopropMiniSphere
+			part = Mite
 		}
 		Tech
 		{
@@ -1362,6 +1411,7 @@ GAME
 			part = liquidEngine2-2
 			part = MassiveBooster
 			part = LiquidEngineLV-TX87
+			part = Pollux
 		}
 		Science
 		{
@@ -1667,7 +1717,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 45211939.319074817
+		NextSpawnTime = 45060362.439973623
 	}
 	SCENARIO
 	{
@@ -1688,8 +1738,8 @@ GAME
 	}
 	FLIGHTSTATE
 	{
-		version = 1.7.3
-		UT = 45203714.977645867
+		version = 1.8.0
+		UT = 45052697.456225358
 		activeVessel = 0
 		mapViewFiltering = 16374
 		commNetUIModeTracking = Network
@@ -1708,18 +1758,18 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 42863835.109653145
+			met = 42712817.588232636
 			lct = 2339879.8679927196
-			lastUT = 45203714.977645867
-			distanceTraveled = 135222499.62555709
+			lastUT = 45052697.456225358
+			distanceTraveled = 117144919.59928752
 			root = 0
-			lat = -0.042831456181607469
-			lon = 45.142804217805008
-			alt = 215503538.90758985
-			hgt = 215503536
-			nrm = -0.363302559,0.7467978,0.557049572
-			rot = 0.174646199,0.428397328,0.880080044,-0.106928438
-			CoM = 0.01507576,-0.0859902799,0.0062017478
+			lat = 4.2823880888322448
+			lon = 35.526649949601776
+			alt = 119571505.58923033
+			hgt = 119571504
+			nrm = -0.621694624,0.773807883,-0.121314287
+			rot = -0.503869534,-0.590515375,0.441411644,-0.450069875
+			CoM = 0.0146187972,-0.0782549828,0.00621252507
 			stg = 7
 			prst = False
 			ref = 435948635
@@ -1732,18 +1782,18 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = ASL
-			cPch = 0
-			cHdg = 0
-			cMod = 0
+			cPch = -1.106015
+			cHdg = -1.113848
+			cMod = 1
 			ORBIT
 			{
-				SMA = 115914615.80573523
-				ECC = 0.94620716416463257
-				INC = 179.89798987265448
-				LPE = 27.452296014194769
-				LAN = 127.11921600118438
-				MNA = 2.6116248710762009
-				EPH = 45203714.117645726
+				SMA = 1205938739.24196
+				ECC = 0.99483811348329776
+				INC = 6.7796867003645005
+				LPE = 345.8330970207615
+				LAN = 61.541922207107518
+				MNA = 0.01726205972559236
+				EPH = 45052697.456225358
 				REF = 8
 			}
 			PART
@@ -1772,8 +1822,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174422389901764
-				tempExt = 89.170190285828483
+				temp = 92.697381692613959
+				tempExt = 92.666447303658074
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -1790,6 +1840,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -1871,8 +1936,8 @@ GAME
 				attN = bottom, 2
 				mass = 0.5
 				shielded = False
-				temp = 89.174516804653507
-				tempExt = 89.169749225967593
+				temp = 92.69829920047124
+				tempExt = 92.667875758801856
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -1889,6 +1954,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -1958,8 +2038,8 @@ GAME
 				attN = bottom, 3
 				mass = 1
 				shielded = False
-				temp = 89.174603710703764
-				tempExt = 89.171431102633164
+				temp = 92.699227366345482
+				tempExt = 92.67258224535135
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -1976,6 +2056,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -1999,7 +2094,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 90.614647182810032
+					amount = 152.54895696791885
 					maxAmount = 720
 					flowState = True
 					isTweakable = True
@@ -2010,7 +2105,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 110.75119839420167
+					amount = 186.44869177758747
 					maxAmount = 880
 					flowState = True
 					isTweakable = True
@@ -2045,8 +2140,8 @@ GAME
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 89.174814898721209
-				tempExt = 89.187500437868124
+				temp = 92.699093200640363
+				tempExt = 92.689944784004766
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2063,6 +2158,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2078,7 +2188,7 @@ GAME
 					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
-					thrustPercentage = 2.5
+					thrustPercentage = 0.5
 					manuallyOverridden = False
 					includeinDVCalcs = False
 					stagingEnabled = True
@@ -2318,8 +2428,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.17443065058319
-				tempExt = 89.170618650032935
+				temp = 92.69733664023525
+				tempExt = 92.668837337068908
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2336,6 +2446,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2422,8 +2547,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174417960634244
-				tempExt = 89.170280407455621
+				temp = 92.69731960272054
+				tempExt = 92.668325718898203
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2440,6 +2565,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2526,8 +2666,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.17443065058319
-				tempExt = 89.170618650032935
+				temp = 92.69733664023525
+				tempExt = 92.668837337068908
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2544,6 +2684,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2630,8 +2785,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174422866433872
-				tempExt = 89.170420108377527
+				temp = 92.697328520772899
+				tempExt = 92.668601316962921
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2648,6 +2803,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2734,8 +2904,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.17443065058319
-				tempExt = 89.170618650032935
+				temp = 92.69733664023525
+				tempExt = 92.668837337068908
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2752,6 +2922,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2838,8 +3023,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174418023020593
-				tempExt = 89.170283372292786
+				temp = 92.697319633991924
+				tempExt = 92.668329939220499
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2856,6 +3041,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -2939,8 +3139,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174364687764893
-				tempExt = 89.169733154690931
+				temp = 92.696874731751222
+				tempExt = 92.66629425583892
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -2957,6 +3157,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3040,8 +3255,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174358365198856
-				tempExt = 89.169599267604355
+				temp = 92.696868132989465
+				tempExt = 92.666152842150467
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3058,6 +3273,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3141,8 +3371,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174336123706226
-				tempExt = 89.170779178250797
+				temp = 92.697283061829623
+				tempExt = 92.674121077327484
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3159,6 +3389,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3240,8 +3485,8 @@ GAME
 				attN = bottom, 14
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174365171888937
-				tempExt = 89.169604957519866
+				temp = 92.697247532189152
+				tempExt = 92.666151112505943
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3258,6 +3503,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3337,7 +3597,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 2
+				sidx = 0
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -3345,8 +3605,8 @@ GAME
 				attN = bottom, 15
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174449887032353
-				tempExt = 89.169208587923166
+				temp = 92.698079521969944
+				tempExt = 92.665708275407169
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3363,6 +3623,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3462,8 +3737,8 @@ GAME
 				attN = top, 14
 				mass = 0.100000001
 				shielded = False
-				temp = 89.174528684210543
-				tempExt = 89.168699447706047
+				temp = 92.698747225921721
+				tempExt = 92.665281209181416
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -3480,6 +3755,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3641,7 +3931,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.9940875144879762
+					amount = 9.9999057097938095
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -3674,8 +3964,8 @@ GAME
 				srfN = srfAttach, 15,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174563724656934
-				tempExt = 89.168485972941085
+				temp = 92.699038190579728
+				tempExt = 92.65960115018602
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3692,6 +3982,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3722,8 +4027,8 @@ GAME
 				srfN = srfAttach, 15,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.1742317981779
-				tempExt = 89.168943452682186
+				temp = 92.696263659047418
+				tempExt = 92.664585882199873
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3740,6 +4045,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3747,7 +4067,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -3781,8 +4101,8 @@ GAME
 				srfN = srfAttach, 15,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.1742317981779
-				tempExt = 89.168943452682186
+				temp = 92.696263659047418
+				tempExt = 92.664585882199873
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3799,6 +4119,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3806,7 +4141,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -3840,8 +4175,8 @@ GAME
 				srfN = srfAttach, 15,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174586628083986
-				tempExt = 89.168519124595903
+				temp = 92.699190966202778
+				tempExt = 92.670390067240533
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3858,6 +4193,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -3910,8 +4260,8 @@ GAME
 				srfN = srfAttach, 19,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174480773951316
-				tempExt = 89.168750006781138
+				temp = 92.698299741852438
+				tempExt = 92.668136370024527
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3928,6 +4278,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4026,8 +4391,8 @@ GAME
 				srfN = srfAttach, 20,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174588632551888
-				tempExt = 89.168513978874572
+				temp = 92.699211444662183
+				tempExt = 92.672200317445004
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4044,6 +4409,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4096,8 +4476,8 @@ GAME
 				srfN = srfAttach, 21,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174593529538413
-				tempExt = 89.168482909473738
+				temp = 92.699243654509417
+				tempExt = 92.671550417500484
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4114,6 +4494,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4166,8 +4561,8 @@ GAME
 				srfN = srfAttach, 19,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174400432984001
-				tempExt = 89.168924409292572
+				temp = 92.69788284728881
+				tempExt = 92.668232759294867
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4184,6 +4579,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4253,8 +4663,8 @@ GAME
 				srfN = srfAttach, 15,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174586586093369
-				tempExt = 89.168512358840928
+				temp = 92.699159446665362
+				tempExt = 92.665816211155956
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4271,6 +4681,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4323,8 +4748,8 @@ GAME
 				srfN = srfAttach, 24,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174480731405978
-				tempExt = 89.16874627018251
+				temp = 92.698269320410859
+				tempExt = 92.665551558063157
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4341,6 +4766,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4439,8 +4879,8 @@ GAME
 				srfN = srfAttach, 25,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174588581148427
-				tempExt = 89.168504292744046
+				temp = 92.69917424732337
+				tempExt = 92.665893267861492
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4457,6 +4897,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4509,8 +4964,8 @@ GAME
 				srfN = srfAttach, 26,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174593479891271
-				tempExt = 89.168473637770504
+				temp = 92.699212140670127
+				tempExt = 92.666026632898877
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4527,6 +4982,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4579,8 +5049,8 @@ GAME
 				srfN = srfAttach, 24,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174400297773786
-				tempExt = 89.168921173403533
+				temp = 92.6977772929705
+				tempExt = 92.665443093752614
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4597,6 +5067,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4659,7 +5144,7 @@ GAME
 				dstg = 0
 				sqor = 1
 				sepI = 1
-				sidx = 3
+				sidx = 1
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -4667,8 +5152,8 @@ GAME
 				attN = bottom, 30
 				mass = 0.129999995
 				shielded = False
-				temp = 89.174497217797281
-				tempExt = 89.168354377106851
+				temp = 92.698490063944476
+				tempExt = 92.66925886183374
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4685,6 +5170,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -4899,7 +5399,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 4
+				sidx = 2
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -4907,8 +5407,8 @@ GAME
 				attN = bottom, 31
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174346703706092
-				tempExt = 89.168787062576044
+				temp = 92.697237120886243
+				tempExt = 92.664170825297461
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4925,6 +5425,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5024,8 +5539,8 @@ GAME
 				attN = bottom, 30
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174308116954279
-				tempExt = 89.16885014042245
+				temp = 92.696891370629231
+				tempExt = 92.664226954506319
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5042,6 +5557,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5123,8 +5653,8 @@ GAME
 				attN = bottom, 33
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174361364548432
-				tempExt = 89.169393629439043
+				temp = 92.697484323631429
+				tempExt = 92.670759016813278
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5141,6 +5671,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5220,7 +5765,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 5
+				sidx = 3
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -5228,8 +5773,8 @@ GAME
 				attN = bottom, 34
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174458477879497
-				tempExt = 89.169746793536547
+				temp = 92.698158218103075
+				tempExt = 92.667628891898403
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5246,6 +5791,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5345,8 +5905,8 @@ GAME
 				attN = top, 33
 				mass = 0.100000001
 				shielded = False
-				temp = 89.174540404523853
-				tempExt = 89.170242016679708
+				temp = 92.698796796882291
+				tempExt = 92.670310131943111
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -5363,6 +5923,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5524,7 +6099,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.9940875144879762
+					amount = 9.9999057097938095
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -5557,8 +6132,8 @@ GAME
 				srfN = srfAttach, 34,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174569247334929
-				tempExt = 89.169389477950077
+				temp = 92.69905312306652
+				tempExt = 92.662490282489699
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5575,6 +6150,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5605,8 +6195,8 @@ GAME
 				srfN = srfAttach, 34,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174269617729848
-				tempExt = 89.169639644771038
+				temp = 92.696846311272168
+				tempExt = 92.673523638752926
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5623,6 +6213,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5630,7 +6235,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -5664,8 +6269,8 @@ GAME
 				srfN = srfAttach, 34,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174269617729848
-				tempExt = 89.169639644771038
+				temp = 92.696410855836319
+				tempExt = 92.667213940923233
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5682,6 +6287,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5689,7 +6309,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -5723,8 +6343,8 @@ GAME
 				srfN = srfAttach, 34,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.17458972870071
-				tempExt = 89.168791565257081
+				temp = 92.699180997801406
+				tempExt = 92.668705687071366
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5741,6 +6361,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5793,8 +6428,8 @@ GAME
 				srfN = srfAttach, 38,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174470457259019
-				tempExt = 89.168849093165363
+				temp = 92.698297545206998
+				tempExt = 92.666493581692535
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5811,6 +6446,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5909,8 +6559,8 @@ GAME
 				srfN = srfAttach, 39,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174589472360225
-				tempExt = 89.168523972278265
+				temp = 92.699188108481067
+				tempExt = 92.667870980417206
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5927,6 +6577,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -5979,8 +6644,8 @@ GAME
 				srfN = srfAttach, 40,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174593529708943
-				tempExt = 89.168481805666175
+				temp = 92.699225426127242
+				tempExt = 92.668300237629467
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -5997,6 +6662,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6049,8 +6729,8 @@ GAME
 				srfN = srfAttach, 38,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174406537741902
-				tempExt = 89.169149018611847
+				temp = 92.697840963867421
+				tempExt = 92.667140089843542
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6067,6 +6747,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6136,8 +6831,8 @@ GAME
 				srfN = srfAttach, 34,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174625506233966
-				tempExt = 89.174001159952169
+				temp = 92.699234641965447
+				tempExt = 92.677564880026793
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6154,6 +6849,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6206,8 +6916,8 @@ GAME
 				srfN = srfAttach, 43,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174571499378715
-				tempExt = 89.172929716394833
+				temp = 92.698442846271377
+				tempExt = 92.672278152484665
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6224,6 +6934,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6322,8 +7047,8 @@ GAME
 				srfN = srfAttach, 44,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174647231582369
-				tempExt = 89.179280592019111
+				temp = 92.699250506154243
+				tempExt = 92.678409677559387
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6340,6 +7065,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6392,8 +7132,8 @@ GAME
 				srfN = srfAttach, 45,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174673781055318
-				tempExt = 89.183099298055851
+				temp = 92.699297354693925
+				tempExt = 92.680545109701086
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6410,6 +7150,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6462,8 +7217,8 @@ GAME
 				srfN = srfAttach, 43,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174521512069745
-				tempExt = 89.172053447914095
+				temp = 92.698062144170891
+				tempExt = 92.673012224712764
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6480,6 +7235,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6542,7 +7312,7 @@ GAME
 				dstg = 0
 				sqor = 1
 				sepI = 1
-				sidx = 6
+				sidx = 4
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -6550,8 +7320,8 @@ GAME
 				attN = bottom, 49
 				mass = 0.129999995
 				shielded = False
-				temp = 89.174501224441443
-				tempExt = 89.16869660091227
+				temp = 92.698515041430156
+				tempExt = 92.670679630137897
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6568,6 +7338,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6782,7 +7567,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 7
+				sidx = 5
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -6790,8 +7575,8 @@ GAME
 				attN = bottom, 50
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174352678104114
-				tempExt = 89.168992846573573
+				temp = 92.697466624476505
+				tempExt = 92.667651734569162
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6808,6 +7593,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -6907,8 +7707,8 @@ GAME
 				attN = bottom, 49
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174312090898553
-				tempExt = 89.168917313685085
+				temp = 92.69726779785691
+				tempExt = 92.672012489449301
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -6925,6 +7725,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7006,8 +7821,8 @@ GAME
 				attN = bottom, 52
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174366062179601
-				tempExt = 89.169621041599328
+				temp = 92.69725080259353
+				tempExt = 92.666192556106935
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7024,6 +7839,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7103,7 +7933,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 8
+				sidx = 6
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -7111,8 +7941,8 @@ GAME
 				attN = bottom, 53
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174451953718759
-				tempExt = 89.169330562828335
+				temp = 92.69808765817767
+				tempExt = 92.665694432983329
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7129,6 +7959,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7228,8 +8073,8 @@ GAME
 				attN = top, 52
 				mass = 0.100000001
 				shielded = False
-				temp = 89.174531934350838
-				tempExt = 89.168951639120621
+				temp = 92.698769918817078
+				tempExt = 92.666465110828071
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -7246,6 +8091,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7407,7 +8267,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.9940875144879762
+					amount = 9.9999057097938095
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -7440,8 +8300,8 @@ GAME
 				srfN = srfAttach, 53,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174564282471422
-				tempExt = 89.168627198618353
+				temp = 92.699040845913899
+				tempExt = 92.660273416993405
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7458,6 +8318,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7488,8 +8363,8 @@ GAME
 				srfN = srfAttach, 53,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174235487428234
-				tempExt = 89.169030546749354
+				temp = 92.696610766627316
+				tempExt = 92.670127731436338
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7506,6 +8381,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7513,7 +8403,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -7547,8 +8437,8 @@ GAME
 				srfN = srfAttach, 53,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174235487428234
-				tempExt = 89.169030546749354
+				temp = 92.696283128740887
+				tempExt = 92.665100187713534
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7565,6 +8455,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7572,7 +8477,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.940875144873871
+					amount = 99.999057097937921
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -7606,8 +8511,8 @@ GAME
 				srfN = srfAttach, 53,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.17459281070451
-				tempExt = 89.169378936586881
+				temp = 92.699214760302482
+				tempExt = 92.674155936612095
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7624,6 +8529,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7676,8 +8596,8 @@ GAME
 				srfN = srfAttach, 57,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174559091210227
-				tempExt = 89.172509092984839
+				temp = 92.698334699230116
+				tempExt = 92.670057263597343
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7694,6 +8614,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7792,8 +8727,8 @@ GAME
 				srfN = srfAttach, 58,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174623479053352
-				tempExt = 89.174738340735928
+				temp = 92.699237914193972
+				tempExt = 92.67696199139256
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7810,6 +8745,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7862,8 +8812,8 @@ GAME
 				srfN = srfAttach, 59,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174685401680222
-				tempExt = 89.18469493328918
+				temp = 92.699302508621088
+				tempExt = 92.681227263025704
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7880,6 +8830,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -7932,8 +8897,8 @@ GAME
 				srfN = srfAttach, 57,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174416643882935
-				tempExt = 89.16941352294063
+				temp = 92.697965186992718
+				tempExt = 92.67048341723698
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -7950,6 +8915,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8019,8 +8999,8 @@ GAME
 				srfN = srfAttach, 53,collider.collider
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174588958433318
-				tempExt = 89.168626318702181
+				temp = 92.699176130756712
+				tempExt = 92.667681562878968
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8037,6 +9017,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8089,8 +9084,8 @@ GAME
 				srfN = srfAttach, 62,RadialTankCapsule
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174468855478381
-				tempExt = 89.16929398925005
+				temp = 92.698381607416763
+				tempExt = 92.670613698644786
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8107,6 +9102,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8205,8 +9215,8 @@ GAME
 				srfN = srfAttach, 63,base
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174595335292963
-				tempExt = 89.169970502618753
+				temp = 92.699192201686131
+				tempExt = 92.668685931626356
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8223,6 +9233,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8275,8 +9300,8 @@ GAME
 				srfN = srfAttach, 64,RadialTankCapsule
 				mass = 0.0337500013
 				shielded = False
-				temp = 89.174615651226304
-				tempExt = 89.172419739958031
+				temp = 92.699259821506729
+				tempExt = 92.673920579891174
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8293,6 +9318,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8345,8 +9385,8 @@ GAME
 				srfN = srfAttach, 62,RadialTankCapsule
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174403157648825
-				tempExt = 89.16901859753925
+				temp = 92.698129421578571
+				tempExt = 92.67470304764943
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8363,6 +9403,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8425,7 +9480,7 @@ GAME
 				dstg = 0
 				sqor = 1
 				sepI = 1
-				sidx = 9
+				sidx = 7
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -8433,8 +9488,8 @@ GAME
 				attN = bottom, 68
 				mass = 0.129999995
 				shielded = False
-				temp = 89.174508777919613
-				tempExt = 89.168637520062489
+				temp = 92.698514660777263
+				tempExt = 92.67039612972485
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8451,6 +9506,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8665,7 +9735,7 @@ GAME
 				dstg = 1
 				sqor = 1
 				sepI = 1
-				sidx = 10
+				sidx = 8
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -8673,8 +9743,8 @@ GAME
 				attN = bottom, 69
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174469684706565
-				tempExt = 89.171242353739345
+				temp = 92.697581167709146
+				tempExt = 92.669777665148501
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8691,6 +9761,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8790,8 +9875,8 @@ GAME
 				attN = bottom, 68
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174581658701825
-				tempExt = 89.175151571948206
+				temp = 92.697617269413797
+				tempExt = 92.678504253896008
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8808,6 +9893,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8881,7 +9981,7 @@ GAME
 				dstg = 0
 				sqor = 1
 				sepI = 2
-				sidx = 0
+				sidx = 9
 				attm = 0
 				sameVesselCollision = False
 				srfN = srfAttach, -1
@@ -8889,8 +9989,8 @@ GAME
 				attN = bottom, 71
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.17468560540226
-				tempExt = 89.178158865466514
+				temp = 92.698007780282779
+				tempExt = 92.672574123606609
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -8907,6 +10007,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -8994,8 +10109,8 @@ GAME
 				attN = bottom, 70
 				mass = 0.25
 				shielded = False
-				temp = 89.174656648766415
-				tempExt = 89.188957468610596
+				temp = 92.699399243064946
+				tempExt = 92.678366874542789
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9012,6 +10127,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9081,8 +10211,8 @@ GAME
 				attN = bottom, 71
 				mass = 0.125
 				shielded = False
-				temp = 89.174651964701951
-				tempExt = 89.184346399180626
+				temp = 92.6993635932064
+				tempExt = 92.675332664651464
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9099,6 +10229,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9168,8 +10313,8 @@ GAME
 				attN = bottom, 72
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174654342038536
-				tempExt = 89.177200065985531
+				temp = 92.697934494768447
+				tempExt = 92.670907624579101
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9186,6 +10331,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9267,8 +10427,8 @@ GAME
 				attN = bottom, 75
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174420292831385
-				tempExt = 89.168852529844457
+				temp = 92.697747176570559
+				tempExt = 92.665303302003593
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9285,6 +10445,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9372,8 +10547,8 @@ GAME
 				attN = bottom, 74
 				mass = 0.125
 				shielded = False
-				temp = 89.174606362832449
-				tempExt = 89.167591783440045
+				temp = 92.699312851505695
+				tempExt = 92.665556391982804
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9390,6 +10565,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9460,8 +10650,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174184225271517
-				tempExt = 89.168294785248904
+				temp = 92.697677823348045
+				tempExt = 92.669497102023755
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9478,6 +10668,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9617,8 +10822,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174231923715723
-				tempExt = 89.169061570555783
+				temp = 92.697785529676551
+				tempExt = 92.672207623250571
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9635,6 +10840,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9773,8 +10993,8 @@ GAME
 				attN = bottom, 75
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174611387569854
-				tempExt = 89.168638954623248
+				temp = 92.699344898112656
+				tempExt = 92.665525770472883
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9791,6 +11011,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9844,8 +11079,8 @@ GAME
 				attN = bottom, 78
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174413992683313
-				tempExt = 89.168918666054296
+				temp = 92.697716043563744
+				tempExt = 92.665157661588879
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9862,6 +11097,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -9943,8 +11193,8 @@ GAME
 				attN = bottom, 81
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174424745437108
-				tempExt = 89.169304642222428
+				temp = 92.697739451531774
+				tempExt = 92.665875354367387
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -9961,6 +11211,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10048,8 +11313,8 @@ GAME
 				attN = bottom, 80
 				mass = 0.0625
 				shielded = False
-				temp = 89.174600513235248
-				tempExt = 89.169211550516977
+				temp = 92.699240386953065
+				tempExt = 92.666753527915617
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10066,6 +11331,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10135,8 +11415,8 @@ GAME
 				attN = bottom, 81
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174422694479475
-				tempExt = 89.169180812268081
+				temp = 92.697919524312169
+				tempExt = 92.670337453244684
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10153,6 +11433,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10234,8 +11529,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174221824282597
-				tempExt = 89.168851527181673
+				temp = 92.696267526344911
+				tempExt = 92.66463000477448
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10252,6 +11547,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10331,14 +11641,14 @@ GAME
 				dstg = 3
 				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 10
 				attm = 1
 				sameVesselCollision = False
 				srfN = srfAttach, 86,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174342347202796
-				tempExt = 89.169262858632393
+				temp = 92.697224952721399
+				tempExt = 92.664871229388552
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10355,6 +11665,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10454,8 +11779,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174242284283636
-				tempExt = 89.168863234499128
+				temp = 92.696400328765421
+				tempExt = 92.664684104059788
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10472,6 +11797,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10553,8 +11893,8 @@ GAME
 				attN = bottom, 88
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174581749018415
-				tempExt = 89.172738856214508
+				temp = 92.699031524579226
+				tempExt = 92.64885121523065
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10571,6 +11911,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10622,8 +11977,8 @@ GAME
 				srfN = srfAttach, 86,collider
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.173356069955844
-				tempExt = 89.164597270560023
+				temp = 92.689043427085693
+				tempExt = 92.633132576049547
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.100000001
@@ -10640,6 +11995,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10685,8 +12055,8 @@ GAME
 				attN = top, 86
 				mass = 0.25
 				shielded = False
-				temp = 89.174570581888304
-				tempExt = 89.165941387578584
+				temp = 92.698993175086315
+				tempExt = 92.641787166766392
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -10703,6 +12073,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10846,8 +12231,8 @@ GAME
 				srfN = srfAttach, 86,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174776972038742
-				tempExt = 89.194242685365154
+				temp = 92.699107514253456
+				tempExt = 92.680275621133887
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.100000001
@@ -10864,6 +12249,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10909,8 +12309,8 @@ GAME
 				srfN = srfAttach, 89,COL 10
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174603325064069
-				tempExt = 89.170903129849165
+				temp = 92.699356840115286
+				tempExt = 92.683694724079686
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.100000001
@@ -10927,6 +12327,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -10943,6 +12358,7 @@ GAME
 					deploy = False
 					deployInvert = False
 					partDeployInvert = False
+					deployAngle = 20
 					authorityLimiter = 100
 					stagingEnabled = True
 					EVENTS
@@ -10968,6 +12384,16 @@ GAME
 					}
 					AXISGROUPS
 					{
+						deployAngle
+						{
+							axisGroup = None
+							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							axisInverted = None
+							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+						}
 						authorityLimiter
 						{
 							axisGroup = None
@@ -11009,8 +12435,8 @@ GAME
 				srfN = srfAttach, 86,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174536665432967
-				tempExt = 89.166653229469333
+				temp = 92.699055624311526
+				tempExt = 92.676879066180618
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.100000001
@@ -11027,6 +12453,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11072,8 +12513,8 @@ GAME
 				srfN = srfAttach, 91,COL 10
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174595800983781
-				tempExt = 89.168916596751373
+				temp = 92.699315315060602
+				tempExt = 92.676895570328
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.100000001
@@ -11090,6 +12531,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11106,6 +12562,7 @@ GAME
 					deploy = False
 					deployInvert = False
 					partDeployInvert = False
+					deployAngle = 20
 					authorityLimiter = 100
 					stagingEnabled = True
 					EVENTS
@@ -11131,11 +12588,21 @@ GAME
 					}
 					AXISGROUPS
 					{
+						deployAngle
+						{
+							axisGroup = None
+							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							axisInverted = None
+						}
 						authorityLimiter
 						{
 							axisGroup = None
 							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 							axisInverted = None
+							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 						}
 					}
 					UPGRADESAPPLIED
@@ -11169,8 +12636,8 @@ GAME
 				attN = bottom, 86
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174445211691435
-				tempExt = 89.169441470744758
+				temp = 92.698234829493543
+				tempExt = 92.663187451173812
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11187,6 +12654,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11286,8 +12768,8 @@ GAME
 				attN = bottom, 93
 				mass = 0.129999995
 				shielded = False
-				temp = 89.174504132551476
-				tempExt = 89.168403595188167
+				temp = 92.698525429094929
+				tempExt = 92.668255764093331
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11304,6 +12786,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11525,8 +13022,8 @@ GAME
 				attN = bottom, 94
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174376874990656
-				tempExt = 89.169015974100077
+				temp = 92.697651971998823
+				tempExt = 92.663255841874289
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11543,6 +13040,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11585,8 +13097,8 @@ GAME
 				attN = top, 95
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174528063271097
-				tempExt = 89.169868595255124
+				temp = 92.698673666654528
+				tempExt = 92.664795037356654
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11603,6 +13115,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11671,8 +13198,8 @@ GAME
 				srfN = srfAttach, 96,collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174377725648625
-				tempExt = 89.169429628332878
+				temp = 92.697510718053863
+				tempExt = 92.665018551931325
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11689,6 +13216,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11759,8 +13301,8 @@ GAME
 				attN = top, 100
 				mass = 0.100000001
 				shielded = False
-				temp = 89.174579678633236
-				tempExt = 89.171356751015608
+				temp = 92.698921864312183
+				tempExt = 92.665336708219741
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -11777,6 +13319,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -11785,7 +13342,7 @@ GAME
 				{
 					name = ModuleCommand
 					isEnabled = True
-					hibernation = False
+					hibernation = True
 					hibernateOnWarp = True
 					activeControlPointName = _default
 					stagingEnabled = True
@@ -11971,8 +13528,8 @@ GAME
 				srfN = srfAttach, 98,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174577900412118
-				tempExt = 89.170245777906601
+				temp = 92.699022930857353
+				tempExt = 92.659324663419397
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -11989,6 +13546,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12020,8 +13592,8 @@ GAME
 				attN = bottom, 98
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174618785725173
-				tempExt = 89.170544965580532
+				temp = 92.699378738975554
+				tempExt = 92.66684357737941
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12038,6 +13610,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12091,8 +13678,8 @@ GAME
 				attN = bottom, 100
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174629173878657
-				tempExt = 89.173582660997624
+				temp = 92.699394693622409
+				tempExt = 92.66914173661992
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12109,6 +13696,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12162,8 +13764,8 @@ GAME
 				attN = bottom, 101
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174622827077897
-				tempExt = 89.172569654444999
+				temp = 92.699392896937894
+				tempExt = 92.673442535170722
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12180,6 +13782,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12232,8 +13849,8 @@ GAME
 				attN = bottom01, 102
 				mass = 0.00700000022
 				shielded = False
-				temp = 89.174512310995382
-				tempExt = 89.171029329707281
+				temp = 92.698595105281342
+				tempExt = 92.673012532041326
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12250,6 +13867,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12313,8 +13945,8 @@ GAME
 				attN = bottom, 105
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174281507842707
-				tempExt = 89.169034676837498
+				temp = 92.697130627413998
+				tempExt = 92.670143691978183
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12331,6 +13963,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12418,8 +14065,8 @@ GAME
 				attN = bottom, 104
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174241786152052
-				tempExt = 89.168986765858321
+				temp = 92.697064565357977
+				tempExt = 92.667150393240163
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12436,6 +14083,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12535,8 +14197,8 @@ GAME
 				attN = bottom, 105
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.17427815445383
-				tempExt = 89.168562056596841
+				temp = 92.698136628074494
+				tempExt = 92.670501087664078
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12553,6 +14215,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12699,8 +14376,8 @@ GAME
 				attN = bottom, 106
 				mass = 0.0250000004
 				shielded = False
-				temp = 89.174613290121457
-				tempExt = 89.169545453129274
+				temp = 92.699354146176205
+				tempExt = 92.668382929422336
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12717,6 +14394,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12770,8 +14462,8 @@ GAME
 				attN = bottom, 107
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.174577461630804
-				tempExt = 89.173731808075289
+				temp = 92.698798231363824
+				tempExt = 92.676732377697974
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12788,6 +14480,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -12899,8 +14606,8 @@ GAME
 				attN = bottom, 108
 				mass = 0.101264581
 				shielded = False
-				temp = 89.174646989035324
-				tempExt = 89.181547540908653
+				temp = 92.699312245530862
+				tempExt = 92.684123704943644
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12917,6 +14624,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13250,8 +14972,8 @@ GAME
 				attN = top, 112
 				mass = 0.100000001
 				shielded = True
-				temp = 89.174627713139458
-				tempExt = 89.173632040034974
+				temp = 92.699471762482062
+				tempExt = 92.698478665350706
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -13268,6 +14990,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13276,7 +15013,7 @@ GAME
 				{
 					name = ModuleCommand
 					isEnabled = True
-					hibernation = True
+					hibernation = False
 					hibernateOnWarp = True
 					activeControlPointName = _default
 					stagingEnabled = True
@@ -13429,7 +15166,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.9940875144879762
+					amount = 9.9999057097938095
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -13462,8 +15199,8 @@ GAME
 				srfN = srfAttach, 110,collider.collider
 				mass = 0.00499999989
 				shielded = True
-				temp = 89.174624444589043
-				tempExt = 89.173545364082344
+				temp = 92.699473222852774
+				tempExt = 92.69847790807529
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13480,6 +15217,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13511,8 +15263,8 @@ GAME
 				attN = bottom, 110
 				mass = 0.0399999991
 				shielded = False
-				temp = 89.174640486868981
-				tempExt = 89.177298595931489
+				temp = 92.698351474775293
+				tempExt = 92.669343192260001
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13529,6 +15281,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13628,8 +15395,8 @@ GAME
 				srfN = srfAttach, 112,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174575900689845
-				tempExt = 89.173772059415668
+				temp = 92.697276480198482
+				tempExt = 92.667204145197459
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13646,6 +15413,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13716,8 +15498,8 @@ GAME
 				srfN = srfAttach, 112,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174538143885371
-				tempExt = 89.173240213770072
+				temp = 92.697276480198482
+				tempExt = 92.667204145197459
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13734,6 +15516,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13804,8 +15601,8 @@ GAME
 				srfN = srfAttach, 112,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 89.174538204115748
-				tempExt = 89.173241736931828
+				temp = 92.697597179402081
+				tempExt = 92.675831651603744
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13822,6 +15619,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13892,8 +15704,8 @@ GAME
 				attN = bottom, 112
 				mass = 0.125
 				shielded = False
-				temp = 89.174659184378243
-				tempExt = 89.18751642313805
+				temp = 92.699364272246441
+				tempExt = 92.674191016981339
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13910,6 +15722,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -13980,8 +15807,8 @@ GAME
 				attN = bottom, 116
 				mass = 0.0625
 				shielded = False
-				temp = 89.174650905431491
-				tempExt = 89.182089546013543
+				temp = 92.699293796964142
+				tempExt = 92.671692778959198
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13998,6 +15825,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -14068,8 +15910,8 @@ GAME
 				attN = bottom, 117
 				mass = 0.0500000007
 				shielded = False
-				temp = 89.174715849062167
-				tempExt = 89.177309373010658
+				temp = 92.697660162372074
+				tempExt = 92.667903158352843
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14086,6 +15928,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -14125,7 +15982,7 @@ GAME
 				dstg = 2
 				sqor = 4
 				sepI = 2
-				sidx = 1
+				sidx = 0
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -14133,8 +15990,8 @@ GAME
 				attN = bottom, 120
 				mass = 0.129999995
 				shielded = False
-				temp = 89.174571820814847
-				tempExt = 89.172936950186397
+				temp = 92.698516589086623
+				tempExt = 92.67017041192527
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14151,6 +16008,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -14364,7 +16236,7 @@ GAME
 				dstg = 3
 				sqor = 4
 				sepI = 4
-				sidx = 2
+				sidx = 1
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -14372,8 +16244,8 @@ GAME
 				attN = bottom, 119
 				mass = 0.00999999978
 				shielded = False
-				temp = 89.17440140602028
-				tempExt = 89.170398596034772
+				temp = 92.697666456174829
+				tempExt = 92.666527108296449
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14390,6 +16262,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -14481,7 +16368,7 @@ GAME
 				dstg = 4
 				sqor = 4
 				sepI = 5
-				sidx = 0
+				sidx = 2
 				attm = 0
 				sameVesselCollision = False
 				srfN = srfAttach, -1
@@ -14489,8 +16376,8 @@ GAME
 				attN = bottom, 120
 				mass = 0.0199999996
 				shielded = False
-				temp = 89.174335648655941
-				tempExt = 89.169315497677744
+				temp = 92.697233877370365
+				tempExt = 92.668641184611133
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14507,6 +16394,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -14568,7 +16470,7 @@ GAME
 				Gear = False, 2342804.52799544
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 44999482.1482091
+				SAS = True, 24168787.9659713
 				Brakes = False, 2351090.1022895
 				Abort = False, 0
 				Custom01 = False, 0
@@ -14600,9 +16502,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = -0.00672219507
-				yaw = 0.0402502418
-				roll = 0.00354951108
+				pitch = -0.00536217168
+				yaw = 0.000224605334
+				roll = -0.000443507626
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -14613,13 +16515,13 @@ GAME
 				FlightIntegrator
 				{
 				}
-				CommNetVessel
-				{
-					controlState = ProbePartial
-					canComm = True
-				}
 				AxisGroupsModule
 				{
+				}
+				CommNetVessel
+				{
+					controlState = ProbeFull
+					canComm = True
 				}
 			}
 		}
@@ -17447,13 +19349,13 @@ GAME
 				FlightIntegrator
 				{
 				}
+				AxisGroupsModule
+				{
+				}
 				CommNetVessel
 				{
 					controlState = ProbeFull
 					canComm = True
-				}
-				AxisGroupsModule
-				{
 				}
 			}
 		}
@@ -19636,13 +21538,13 @@ GAME
 				FlightIntegrator
 				{
 				}
+				AxisGroupsModule
+				{
+				}
 				CommNetVessel
 				{
 					controlState = ProbeFull
 					canComm = True
-				}
-				AxisGroupsModule
-				{
 				}
 			}
 		}
@@ -19660,18 +21562,18 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 41184602.884090602
+			met = 41033585.362670094
 			lct = 4019112.0935552628
-			lastUT = 45203714.977645867
-			distanceTraveled = 73403374.372035086
+			lastUT = 45052697.456225358
+			distanceTraveled = 56044279.849223137
 			root = 0
-			lat = -0.042761294560531918
-			lon = 45.142793520761828
-			alt = 215503419.40257469
-			hgt = 215503424
-			nrm = 0.0463551357,-0.543128729,0.838368893
-			rot = -0.00734887738,0.0192748737,-0.697027922,-0.716747344
-			CoM = -7.34720379E-06,0.240344599,0.0153568089
+			lat = 4.2823895587117899
+			lon = 35.526643221655775
+			alt = 119571831.30345738
+			hgt = 119571832
+			nrm = -0.983178377,-0.143617764,-0.112846851
+			rot = 0.203733891,0.387756974,0.887131572,-0.145377666
+			CoM = 0,0,0
 			stg = 0
 			prst = False
 			ref = 0
@@ -19684,18 +21586,18 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = ASL
-			cPch = 0
-			cHdg = 0
+			cPch = 0.05799963
+			cHdg = -6.707996
 			cMod = 0
 			ORBIT
 			{
-				SMA = 115914528.73762845
-				ECC = 0.94620697444386404
-				INC = 179.89842332295649
-				LPE = 27.521810656911025
-				LAN = 127.18873767741212
-				MNA = 0.84144213513081056
-				EPH = 45072283.893943697
+				SMA = 1206064932.6277816
+				ECC = 0.99483834821979689
+				INC = 6.7796525497123232
+				LPE = 345.83363716248186
+				LAN = 61.542167752321916
+				MNA = 0.00055281192179471028
+				EPH = 45011066.692889363
 				REF = 8
 			}
 			PART
@@ -19722,8 +21624,8 @@ GAME
 				srfN = , -1
 				mass = 0.09375
 				shielded = False
-				temp = 115.08499297209022
-				tempExt = 115.08399588128943
+				temp = 122.70154542479771
+				tempExt = 122.62080386504233
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -19742,6 +21644,21 @@ GAME
 				}
 				ACTIONS
 				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
 				}
 				PARTDATA
 				{
@@ -20127,13 +22044,13 @@ GAME
 				FlightIntegrator
 				{
 				}
+				AxisGroupsModule
+				{
+				}
 				CommNetVessel
 				{
 					controlState = None
 					canComm = False
-				}
-				AxisGroupsModule
-				{
 				}
 			}
 		}
@@ -23655,12 +25572,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Sigrey Kerman
+			name = Huduki Kerman
 			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.717419386
-			dumb = 0.391248077
+			brave = 0.857297301
+			dumb = 0.297316372
 			badS = False
 			veteran = False
 			tour = False
@@ -23691,12 +25608,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Leberry Kerman
-			gender = Female
+			name = Thompbin Kerman
+			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.395484984
-			dumb = 0.967609882
+			brave = 0.160432518
+			dumb = 0.593587339
 			badS = False
 			veteran = False
 			tour = False
@@ -23727,49 +25644,85 @@ GAME
 		}
 		KERBAL
 		{
-			name = Tanbree Kerman
-			gender = Female
+			name = Newny Kerman
+			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.262251467
-			dumb = 0.160892263
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Lisus Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.709390044
-			dumb = 0.347573489
+			brave = 0.564073682
+			dumb = 0.251610249
 			badS = True
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Gerhat Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.656968772
+			dumb = 0.668830991
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Neddo Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.98220253
+			dumb = 0.312419653
+			badS = False
 			veteran = False
 			tour = False
 			state = Assigned
