@@ -7,6 +7,16 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 20](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v20) - 2019-11-03
+
+- MIKE bumped to "safe" Jool orbit with PE above Tylo's SOI
+- MIKE inclination fixed
+- TANGO, BRAVO and Jeb rendezvoused in low Tylo orbit
+
+## [Version 19](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v19) - 2019-10-30
+
+- MIKE to high Jool orbit, re-done to higher elliptical orbit
+
 ## [Version 18](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v18) - 2019-10-14
 
 - MIKE to high Jool orbit
