@@ -7,6 +7,12 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 21](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v21) - 2019-11-04
+
+- VICTOR in elliptic Vall orbit
+- KILO in high elliptic Laythe orbit
+- LIMA in low Laythe orbit 60x60
+
 ## [Version 20](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v20) - 2019-11-03
 
 - MIKE bumped to "safe" Jool orbit with PE above Tylo's SOI
