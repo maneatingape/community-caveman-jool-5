@@ -7,6 +7,31 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 21](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v21) - 2019-11-04
+
+- VICTOR in elliptic Vall orbit
+- KILO in high elliptic Laythe orbit
+- LIMA in low Laythe orbit 60x60
+
+## [Version 20](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v20) - 2019-11-03
+
+- MIKE bumped to "safe" Jool orbit with PE above Tylo's SOI
+- MIKE inclination fixed
+- TANGO, BRAVO and Jeb rendezvoused in low Tylo orbit
+
+## [Version 19](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v19) - 2019-10-30
+
+- MIKE to high Jool orbit, re-done to higher elliptical orbit
+
+## [Version 18](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v18) - 2019-10-14
+
+- MIKE to high Jool orbit
+
+## [Version 17](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v17) - 2019-10-01
+
+- Dock KILO with MIKE
+- Add mission badges
+
 ## [Version 16](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v16) - 2019-09-27
 
 - Dock LIMA with MIKE
