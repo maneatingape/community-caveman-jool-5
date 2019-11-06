@@ -7,6 +7,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 22](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v22) - 2019-11-06
+
+- Tylo landing successfully completed
+- Jeb rendezvoused with BRAVO in low Tylo orbit
+
 ## [Version 21](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v21) - 2019-11-04
 
 - VICTOR in elliptic Vall orbit
