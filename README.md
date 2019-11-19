@@ -7,6 +7,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 23](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v23) - 2019-11-19
+
+- Bop and Pol landings successfully completed
+- Jeb rendezvoused with VICTOR in Vall orbit
+
 ## [Version 22](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v22) - 2019-11-06
 
 - Tylo landing successfully completed
