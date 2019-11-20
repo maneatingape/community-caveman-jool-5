@@ -7,6 +7,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 24](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v24) - 2019-11-20
+
+- Vall landing successfully completed
+- Jeb in 60km x 60km Laythe orbit
+
 ## [Version 23](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v23) - 2019-11-19
 
 - Bop and Pol landings successfully completed
