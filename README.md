@@ -7,6 +7,11 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 25](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v25) - 2019-11-25
+
+- Laythe landing and retrieval successfully completed
+- Jeb in low Laythe orbit
+
 ## [Version 24](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v24) - 2019-11-20
 
 - Vall landing successfully completed
