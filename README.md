@@ -7,6 +7,27 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 24](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v24) - 2019-11-20
+
+- Vall landing successfully completed
+- Jeb in 60km x 60km Laythe orbit
+
+## [Version 23](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v23) - 2019-11-19
+
+- Bop and Pol landings successfully completed
+- Jeb rendezvoused with VICTOR in Vall orbit
+
+## [Version 22](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v22) - 2019-11-06
+
+- Tylo landing successfully completed
+- Jeb rendezvoused with BRAVO in low Tylo orbit
+
+## [Version 21](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v21) - 2019-11-04
+
+- VICTOR in elliptic Vall orbit
+- KILO in high elliptic Laythe orbit
+- LIMA in low Laythe orbit 60x60
+
 ## [Version 20](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v20) - 2019-11-03
 
 - MIKE bumped to "safe" Jool orbit with PE above Tylo's SOI
