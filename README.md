@@ -7,6 +7,14 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 27](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v27) - 2019-12-06
+
+- KILO and Jeb approaching Kerbin intercept
+
+## [Version 26](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v26) - 2019-12-01
+
+- KILO and Jeb ejected from Laythe into Jool to Kerbin Hohmann transfer
+
 ## [Version 25](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v25) - 2019-11-25
 
 - Laythe landing and retrieval successfully completed
