@@ -15,8 +15,8 @@ GAME
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
-	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP.x86_64  - 
-	versionFull = 1.7.3.2594 (LinuxPlayer)
+	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP  - 
+	versionFull = 1.7.3.2594 (OSXPlayer)
 	versionCreated = 1.7.3.2594 (OSXPlayer)
 	PARAMETERS
 	{
@@ -87,7 +87,7 @@ GAME
 		}
 		CAREER
 		{
-			TechTreeUrl = GameData/ModuleManager.TechTree
+			TechTreeUrl = GameData\ModuleManager.TechTree
 			StartingFunds = 500000
 			StartingScience = 1190
 			StartingReputation = 0
@@ -317,7 +317,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 218401414.89063281
+		update = 218434510.55591395
 		version = 1.7.3
 		WEIGHTS
 		{
@@ -755,65 +755,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 36d8cb52-5989-4719-bb58-2bf58f94c0a3
-				type = PartTest
-				prestige = 1
-				seed = -1831603155
-				state = Offered
-				viewed = Unseen
-				agent = O.M.B. Demolition Enterprises
-				agentName = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,73612800,180000,495000.010728836,198000.004291534,8,13.63636,11,218422914.850004,0,0,0
-				part = Separator.2
-				haul = False
-				dest = 10
-				sit = SUB_ORBITAL
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = Separator.2
-					body = Vall
-					situation = SUB_ORBITAL
-					uniqueID = 0.095194820824635595
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 10
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 250000
-						maxAlt = 260000
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = 1848001f-9ec0-427e-b49f-36c9c746bee6
 				type = BaseContract
 				prestige = 1
@@ -877,47 +818,102 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = c5f3897e-94fe-4339-ba1f-e0768a5bb4da
-				type = TourismContract
+				guid = d5fd944a-a115-4cb0-afaa-b916729f5977
+				type = StationContract
 				prestige = 1
-				seed = -1831603152
+				seed = -308481523
 				state = Offered
 				viewed = Unseen
-				agent = Maxo Construction Toys
-				agentName = Maxo Construction Toys
+				agent = Zaltonic Electronics
+				agentName = Zaltonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,276048000,0,0,0,0,25,12,218422914.850004,0,0,0
+				values = 86400,515289600,421055.992126465,1201325.40357385,463161.601377868,0,23.497,13.63636,218509314.894368,0,0,0
+				targetBody = 12
+				capacity = 7
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = station
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = has an antenna|has a docking port|can generate power
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 7
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 4000
+					resourceName = LiquidFuel
+					resourceTitle = liquid fuel
+					vesselName = station
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 5000
+					resourceName = ElectricCharge
+					resourceTitle = electric charge
+					vesselName = station
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 12
+					targetSituation = ORBITING
+					noun = station
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 5f8edea7-d6d6-4af8-bccd-25576672db04
+				type = TourismContract
+				prestige = 1
+				seed = -308481520
+				state = Offered
+				viewed = Unseen
+				agent = Vac-Co Advanced Suction Systems
+				agentName = Vac-Co Advanced Suction Systems
+				deadlineType = Floating
+				expiryType = Floating
+				values = 84705.8824539185,270635294.440269,0,0,0,0,21.44082,12,218507620.776822,0,0,0
 				preposition = around The Sun
 				homeDestinations = False
 				isGeeAdventure = False
-				tourists = Rodton Kerman|Jean Kerman
+				tourists = Mibro Kerman|Lagas Kerman|Barby Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					state = Incomplete
 					allowPartialFailure = True
-					values = 219375,0,0,0,0
-					kerbalName = Rodton Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 8
-						targetType = Flyby
-						kerbalName = Rodton Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 8
-						targetType = Orbit
-						kerbalName = Rodton Kerman
-					}
+					values = 146250,0,0,0,0
+					kerbalName = Mibro Kerman
+					kerbalGender = Female
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -925,7 +921,43 @@ GAME
 						values = 24375,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Rodton Kerman
+						kerbalName = Mibro Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 8
+						targetType = Orbit
+						kerbalName = Mibro Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 97500,0,0,0,0
+					kerbalName = Lagas Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 16250,0,0,0,0
+						targetBody = 0
+						targetType = Flyby
+						kerbalName = Lagas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 16250,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Lagas Kerman
 					}
 				}
 				PARAM
@@ -934,75 +966,295 @@ GAME
 					state = Incomplete
 					allowPartialFailure = True
 					values = 146250,0,0,0,0
-					kerbalName = Jean Kerman
+					kerbalName = Barby Kerman
 					kerbalGender = Female
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 8
+						values = 16250,0,0,0,0
+						targetBody = 0
 						targetType = Orbit
-						kerbalName = Jean Kerman
+						kerbalName = Barby Kerman
 					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 8
+						values = 16250,0,0,0,0
+						targetBody = 0
 						targetType = Flyby
-						kerbalName = Jean Kerman
+						kerbalName = Barby Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 16250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Barby Kerman
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 532fde57-191b-4fd9-813e-a3264b64bb96
-				type = PartTest
+				guid = e8d8ca8a-744a-4462-906a-aab9c623db11
+				type = TourismContract
 				prestige = 2
-				seed = -1831603148
+				seed = -308481513
 				state = Offered
 				viewed = Unseen
-				agent = O.M.B. Demolition Enterprises
-				agentName = O.M.B. Demolition Enterprises
+				agent = Integrated Integrals
+				agentName = Integrated Integrals
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,55209600,97200,279449.994206429,111779.997682571,6,8.695652,8,218422914.850004,0,0,0
-				part = Decoupler.0
-				haul = False
-				dest = 8
-				sit = ESCAPING
-				exp = True
+				values = 41941.7495727539,357343706.359863,0,0,0,0,27.65217,15,218464856.64394,0,0,0
+				preposition = of the solar system
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Ludman Kerman|Kaberry Kerman|Judith Kerman|Jolas Kerman|Barlo Kerman|Dilemy Kerman
 				PARAM
 				{
-					name = PartTest
+					name = KerbalTourParameter
 					state = Incomplete
-					values = 0,0,0,0,0
-					part = Decoupler.0
-					body = Jool
-					situation = ESCAPING
-					uniqueID = 0.43621406258838907
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					allowPartialFailure = True
+					values = 468000,0,0,0,0
+					kerbalName = Ludman Kerman
+					kerbalGender = Male
 					PARAM
 					{
-						name = ReachDestination
+						name = KerbalDestinationParameter
 						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 8
-						title = 
+						values = 39000,0,0,0,0
+						targetBody = 14
+						targetType = Land
+						kerbalName = Ludman Kerman
 					}
 					PARAM
 					{
-						name = ReachSituation
+						name = KerbalDestinationParameter
 						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ESCAPING
-						title = 
+						values = 39000,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Ludman Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 8
+						targetType = Flyby
+						kerbalName = Ludman Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 14
+						targetType = Orbit
+						kerbalName = Ludman Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 351000,0,0,0,0
+					kerbalName = Kaberry Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 10
+						targetType = Flyby
+						kerbalName = Kaberry Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 11
+						targetType = Land
+						kerbalName = Kaberry Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Kaberry Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 351000,0,0,0,0
+					kerbalName = Judith Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 9
+						targetType = Orbit
+						kerbalName = Judith Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 9
+						targetType = Flight
+						kerbalName = Judith Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 11
+						targetType = Orbit
+						kerbalName = Judith Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 468000,0,0,0,0
+					kerbalName = Jolas Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 11
+						targetType = Land
+						kerbalName = Jolas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 0
+						targetType = Flyby
+						kerbalName = Jolas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Jolas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 8
+						targetType = Orbit
+						kerbalName = Jolas Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 351000,0,0,0,0
+					kerbalName = Barlo Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 10
+						targetType = Orbit
+						kerbalName = Barlo Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Barlo Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 8
+						targetType = Flyby
+						kerbalName = Barlo Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 468000,0,0,0,0
+					kerbalName = Dilemy Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 9
+						targetType = Land
+						kerbalName = Dilemy Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 11
+						targetType = Flyby
+						kerbalName = Dilemy Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 11
+						targetType = Orbit
+						kerbalName = Dilemy Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 39000,0,0,0,0
+						targetBody = 9
+						targetType = Flyby
+						kerbalName = Dilemy Kerman
 					}
 				}
 			}
@@ -1998,7 +2250,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 218420912.90356624
+		NextSpawnTime = 218437692.6597999
 	}
 	SCENARIO
 	{
@@ -2012,6 +2264,13 @@ GAME
 			Bill Kerman = TR/male20 GENERIC
 			Bob Kerman = TR/male50 GENERIC
 			Valentina Kerman = TR/female10 GENERIC
+			Handin Kerman = GENERIC GENERIC
+			Maxbrett Kerman = GENERIC GENERIC
+			Leedon Kerman = GENERIC GENERIC
+			Bobdin Kerman = GENERIC GENERIC
+			Jermy Kerman = GENERIC GENERIC
+			Rodton Kerman = GENERIC GENERIC
+			Jean Kerman = GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -2020,7 +2279,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.7.3
-		UT = 218401421.53063637
+		UT = 218434515.33591652
 		activeVessel = 2
 		mapViewFiltering = 16383
 		commNetUIModeTracking = Network
@@ -2039,17 +2298,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 213706834.26914364
+			met = 214415403.24236125
 			lct = 4019112.0935552628
-			lastUT = 217725946.36269891
-			distanceTraveled = 344450688.6476528
+			lastUT = 218434515.33591652
+			distanceTraveled = 369079941.04988027
 			root = 0
-			lat = 0.0031378394441462553
-			lon = 53.757614159490146
-			alt = 14420523135.366703
-			hgt = 1.4420523E+10
-			nrm = -0.176180109,0.100054711,0.979259789
-			rot = -0.167872712,0.290204525,-0.682627201,0.649322927
+			lat = -2.2849622192877952
+			lon = -30.581663096524
+			alt = 862471.11887457641
+			hgt = 862471.125
+			nrm = -0.662607312,-0.726568818,0.181795061
+			rot = 0.431108385,-0.177875474,0.77425456,0.427826852
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -2068,13 +2327,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = -773331.73853214015
-				ECC = 3.8612294263113225
-				INC = 106.12062258766814
-				LPE = 104.93325070175304
-				LAN = 7.1833705291960541
-				MNA = -105.71823377512135
-				EPH = 218395769.25331438
+				SMA = 4525083.7454977082
+				ECC = 0.85088743124461086
+				INC = 2.7753794550068349
+				LPE = 204.69000690978345
+				LAN = 274.21484702367127
+				MNA = 0.1354115103446224
+				EPH = 218434515.33591652
 				REF = 1
 			}
 			PART
@@ -2101,8 +2360,8 @@ GAME
 				srfN = , -1
 				mass = 0.09375
 				shielded = False
-				temp = 262.73167750989916
-				tempExt = 262.73167750989916
+				temp = 228.60622876069479
+				tempExt = 228.96610518116026
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -2299,9 +2558,6 @@ GAME
 					ACTIONS
 					{
 					}
-					UPGRADESAPPLIED
-					{
-					}
 					Log
 					{
 						flight = 0
@@ -2343,6 +2599,9 @@ GAME
 						0 = Escape,Laythe
 						0 = Escape,Jool
 						0 = Flyby,Kerbin
+					}
+					UPGRADESAPPLIED
+					{
 					}
 				}
 				MODULE
@@ -2449,7 +2708,7 @@ GAME
 				RESOURCE
 				{
 					name = EVA Propellant
-					amount = 2.6698100785254129
+					amount = 1.6336813009731637
 					maxAmount = 5
 					flowState = True
 					isTweakable = False
@@ -2464,8 +2723,8 @@ GAME
 				Gear = False, 0
 				Light = True, 168677318.051201
 				RCS = True, 165503261.537078
-				SAS = False, 0
-				Brakes = False, 0
+				SAS = True, 218409146.336847
+				Brakes = True, 218401706.350789
 				Abort = False, 0
 				Custom01 = False, 0
 				Custom02 = False, 0
@@ -2496,9 +2755,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 0
+				pitch = -1
+				yaw = -1
+				roll = 1
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -2533,21 +2792,21 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = True
-			met = 6664349.2899592817
+			met = 56420043.542226762
 			lct = 162014424.35366431
-			lastUT = 168678773.64362359
+			lastUT = 218434467.89589107
 			distanceTraveled = 14896719.762173116
 			root = 0
-			lat = 0.50062671210720799
-			lon = 157.81230429716541
-			alt = -0.12732025346485898
-			hgt = 1547.57471
-			nrm = 0.131895691,0.987117648,-0.0905668736
-			rot = 0.589663506,-0.39888078,0.389541268,0.584336162
-			CoM = 2.46092677E-05,-0.0992865562,1.15782022E-05
+			lat = 0.50062671194002295
+			lon = 157.81230429745821
+			alt = -0.1270656575798057
+			hgt = 1546.27942
+			nrm = 0.163143128,0.982001066,-0.0951755643
+			rot = 0.589584529,-0.398938894,0.389499247,0.58440429
+			CoM = 8.19563866E-08,-0.0992673263,1.00582838E-07
 			stg = 0
 			prst = False
-			ref = 2761408565
+			ref = 0
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 8
@@ -2557,18 +2816,18 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = AGL
-			cPch = 0
-			cHdg = 0
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 0.50062679753080674
+				INC = 0.50062679583523406
 				LPE = 270
-				LAN = 254.44513717072306
+				LAN = 119.12180745054957
 				MNA = 0
-				EPH = 218401404.85062742
+				EPH = 218434470.31589237
 				REF = 9
 			}
 			PART
@@ -2597,10 +2856,10 @@ GAME
 				attN = top, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 278.41294304816091
-				tempExt = 284.65563621838521
-				tempExtUnexp = 284.65543836446955
-				staticPressureAtm = 0.60986142056434223
+				temp = 284.02282802234589
+				tempExt = 283.96991440445453
+				tempExtUnexp = 283.96997306888113
+				staticPressureAtm = 0.60984156873898276
 				expt = 0
 				state = 0
 				attached = True
@@ -2650,7 +2909,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Idle
+					stateString = Running
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -2779,7 +3038,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.4525207209747837
+					amount = 9.4509342105472509
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -2812,10 +3071,10 @@ GAME
 				srfN = srfAttach, 0,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 276.68990618461299
-				tempExt = 285.68746488246052
-				tempExtUnexp = 285.68732392729487
-				staticPressureAtm = 0.59999666889302672
+				temp = 284.0231740730755
+				tempExt = 283.97547718690038
+				tempExtUnexp = 283.97552592031997
+				staticPressureAtm = 0.59999663124489189
 				expt = 0.5
 				state = 0
 				attached = True
@@ -2859,9 +3118,9 @@ GAME
 				srfN = srfAttach, 0,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 281.5804368985165
-				tempExt = 285.46269955360231
-				tempExtUnexp = 285.46254926633264
+				temp = 284.01958289225303
+				tempExt = 283.96947611539804
+				tempExtUnexp = 283.96952755610681
 				staticPressureAtm = 0.59999813717028661
 				expt = 0.5
 				state = 0
@@ -2883,7 +3142,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 94.525207209744451
+					amount = 94.509342105469187
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -2917,9 +3176,9 @@ GAME
 				srfN = srfAttach, 0,collider.collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 281.58048133782603
-				tempExt = 285.46278637179688
-				tempExtUnexp = 285.46263647028121
+				temp = 284.01958252019745
+				tempExt = 283.96947160213676
+				tempExtUnexp = 283.96952300876376
 				staticPressureAtm = 0.59999840070723076
 				expt = 0.5
 				state = 0
@@ -2941,7 +3200,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 94.525207209744451
+					amount = 94.509342105469187
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -2976,10 +3235,10 @@ GAME
 				attN = bottom, -1
 				mass = 0.129999995
 				shielded = False
-				temp = 274.49428819880814
-				tempExt = 281.79348485738416
-				tempExtUnexp = 281.79314628735261
-				staticPressureAtm = 0.62435229318816554
+				temp = 284.02233784990534
+				tempExt = 283.94265875032488
+				tempExtUnexp = 283.94265764710804
+				staticPressureAtm = 0.62433129269605114
 				expt = 0.5
 				state = 1
 				attached = True
@@ -3216,9 +3475,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 0
+				pitch = -0.00246076076
+				yaw = 0.000287025381
+				roll = -5.93602999E-06
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -3231,7 +3490,7 @@ GAME
 				}
 				CommNetVessel
 				{
-					controlState = ProbePartial
+					controlState = ProbeFull
 					canComm = True
 				}
 				AxisGroupsModule
@@ -3245,7 +3504,7 @@ GAME
 			persistentId = 3577403679
 			name = KILO
 			type = Probe
-			sit = ESCAPING
+			sit = ORBITING
 			landed = False
 			skipGroundPositioning = False
 			vesselSpawning = False
@@ -3253,19 +3512,19 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 49569337.722535819
+			met = 49602431.527815968
 			lct = 168832083.80810055
-			lastUT = 218401421.53063637
-			distanceTraveled = 41257986.419633836
+			lastUT = 218434515.33591652
+			distanceTraveled = 66524058.002393417
 			root = 0
-			lat = 2.1146537382878217
-			lon = -49.967635073424503
-			alt = 71374684.728523016
-			hgt = 71374688
-			nrm = -0.63045752,0.640699327,-0.438209742
-			rot = -0.311279327,-0.311948061,-0.636118293,0.633361936
-			CoM = 4.35113907E-06,2.11453533,3.09944153E-06
-			stg = 4
+			lat = -2.2849539920476163
+			lon = -30.581690384355475
+			alt = 862472.04148302437
+			hgt = 862472.063
+			nrm = 0.210004866,-0.838428795,0.502926648
+			rot = 0.672018826,0.0108131347,0.440618038,0.595087826
+			CoM = 5.48362732E-06,0.606736541,-1.96695328E-06
+			stg = 3
 			prst = False
 			ref = 0
 			ctrl = True
@@ -3277,18 +3536,18 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = ASL
-			cPch = 0.376
-			cHdg = 7.736009
+			cPch = 0.01584108
+			cHdg = 0.8823389
 			cMod = 0
 			ORBIT
 			{
-				SMA = -773336.9768168244
-				ECC = 3.8488263251588362
-				INC = 106.02326178762002
-				LPE = 104.98305184032945
-				LAN = 7.1832806098379933
-				MNA = -90.102504843314676
-				EPH = 218401421.53063637
+				SMA = 4525128.6637996798
+				ECC = 0.85088887199912544
+				INC = 2.7754123920773739
+				LPE = 204.69107209010775
+				LAN = 274.21382503530344
+				MNA = 0.13540940211275143
+				EPH = 218434515.33591652
 				REF = 1
 			}
 			PART
@@ -3304,10 +3563,10 @@ GAME
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 0
+				istg = 2
 				resPri = 0
 				dstg = 4
-				sqor = 0
+				sqor = 2
 				sepI = -1
 				sidx = 0
 				attm = 0
@@ -3317,8 +3576,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 223.17450961230469
-				tempExt = 223.55590740502777
+				temp = 197.07986108162584
+				tempExt = 197.72452275363952
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3346,7 +3605,7 @@ GAME
 					independentThrottlePercentage = 0
 					staged = False
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -3421,7 +3680,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0
+					animState = 0.00309219956
 					stagingEnabled = True
 					EVENTS
 					{
@@ -3463,7 +3722,7 @@ GAME
 				rotation = 0,0,0,0.99999994
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 0
+				istg = 2
 				resPri = -1
 				dstg = 4
 				sqor = -1
@@ -3476,8 +3735,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0250000004
 				shielded = False
-				temp = 223.09736250268327
-				tempExt = 223.3105371404402
+				temp = 196.99626182796877
+				tempExt = 198.17197413097966
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3500,7 +3759,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 18
+					amount = 8.8374942404955164
 					maxAmount = 18
 					flowState = True
 					isTweakable = True
@@ -3511,7 +3770,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 22
+					amount = 10.801381310127352
 					maxAmount = 22
 					flowState = True
 					isTweakable = True
@@ -3546,8 +3805,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.00999999978
 				shielded = False
-				temp = 222.81487831964537
-				tempExt = 222.85953656890709
+				temp = 197.23570515552723
+				tempExt = 200.61684370211083
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -3650,7 +3909,7 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 1
-				sidx = 1
+				sidx = 0
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
@@ -3670,8 +3929,8 @@ GAME
 				attN = bottom, 2
 				mass = 0.101264581
 				shielded = False
-				temp = 222.72814978144751
-				tempExt = 222.65461517643143
+				temp = 197.38191267766894
+				tempExt = 204.12011453677655
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4019,8 +4278,8 @@ GAME
 				attN = top, 6
 				mass = 0.100000001
 				shielded = True
-				temp = 223.00127689931313
-				tempExt = 223.01223216858739
+				temp = 192.44310156888056
+				tempExt = 192.39529632679947
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4229,8 +4488,8 @@ GAME
 				srfN = srfAttach, 4,collider.collider
 				mass = 0.00499999989
 				shielded = True
-				temp = 223.05939415366501
-				tempExt = 223.02265837207119
+				temp = 192.18942773609118
+				tempExt = 192.34958768880878
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4264,21 +4523,21 @@ GAME
 				rotation = 0,0,0,0.99999994
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				resPri = 0
 				dstg = 1
 				sqor = 2
-				sepI = 2
+				sepI = 1
 				sidx = 0
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
-				attN = top, 10
+				attN = top, -1
 				attN = bottom, 4
 				mass = 0.0399999991
 				shielded = False
-				temp = 222.41755201306341
-				tempExt = 222.37183257285889
+				temp = 190.88413452247994
+				tempExt = 190.85763861064365
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -4303,8 +4562,8 @@ GAME
 					name = ModuleDecouple
 					isEnabled = True
 					ejectionForcePercent = 100
-					isDecoupled = False
-					stagingEnabled = True
+					isDecoupled = True
+					stagingEnabled = False
 					EVENTS
 					{
 					}
@@ -4323,7 +4582,7 @@ GAME
 				{
 					name = ModuleToggleCrossfeed
 					isEnabled = True
-					crossfeedStatus = False
+					crossfeedStatus = True
 					stagingEnabled = True
 					EVENTS
 					{
@@ -4387,11 +4646,11 @@ GAME
 				rotation = 0.707106888,0.707106769,3.69299613E-08,3.60653587E-08
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				resPri = 0
 				dstg = 0
 				sqor = -1
-				sepI = 2
+				sepI = 1
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
@@ -4400,8 +4659,8 @@ GAME
 				srfN = srfAttach, 6,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.41071395793352
-				tempExt = 222.29828500843414
+				temp = 190.87320946130603
+				tempExt = 190.83123533505267
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4471,11 +4730,11 @@ GAME
 				rotation = 0.353553265,0.353553295,-0.612372339,-0.612372577
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				resPri = 0
 				dstg = 2
 				sqor = -1
-				sepI = 2
+				sepI = 1
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
@@ -4484,8 +4743,8 @@ GAME
 				srfN = srfAttach, 6,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.41071395793352
-				tempExt = 222.29828500843414
+				temp = 190.87239189970092
+				tempExt = 190.81288636673821
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4555,11 +4814,11 @@ GAME
 				rotation = -0.353553385,-0.353553385,-0.612372339,-0.612372458
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				resPri = 0
 				dstg = 2
 				sqor = -1
-				sepI = 2
+				sepI = 1
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
@@ -4568,8 +4827,8 @@ GAME
 				srfN = srfAttach, 6,COL1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.41071395793352
-				tempExt = 222.29828500843414
+				temp = 190.87371773751713
+				tempExt = 190.84248072532756
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -4626,480 +4885,14 @@ GAME
 					}
 				}
 			}
-			PART
-			{
-				name = fuelTankSmall
-				cid = 4293862736
-				uid = 2221095259
-				mid = 1828929763
-				persistentId = 3698629073
-				launchID = 16
-				parent = 6
-				position = -1.846188837362206E-07,2.794940710067749,2.4878707449715876E-07
-				rotation = 0,0,0,0.99999994
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				resPri = 0
-				dstg = 2
-				sqor = -1
-				sepI = 2
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 11
-				attN = bottom, 6
-				mass = 0.125
-				shielded = False
-				temp = 222.71654543397946
-				tempExt = 222.53845570704635
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/default
-				rTrf = fuelTankSmall
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					selectedVariant = White
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 12.099461430874165
-					maxAmount = 90
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 14.780187385449167
-					maxAmount = 110
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelTankSmallFlat
-				cid = 4293855562
-				uid = 1740058301
-				mid = 1828929763
-				persistentId = 1337870324
-				launchID = 16
-				parent = 10
-				position = 5.4215956168945922E-09,3.662691593170166,3.3595438253541943E-07
-				rotation = 0,0,0,0.99999994
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = 2
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 12
-				attN = bottom, 10
-				mass = 0.0625
-				shielded = False
-				temp = 222.70756738439778
-				tempExt = 222.50119227760234
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/default
-				rTrf = fuelTankSmallFlat
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					selectedVariant = White
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 6.1679833485741442
-					maxAmount = 45
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 7.5466826952841277
-					maxAmount = 55
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = adapterSmallMiniTall
-				cid = 4293802984
-				uid = 1639966066
-				mid = 1828929763
-				persistentId = 3025355051
-				launchID = 16
-				parent = 11
-				position = -1.9776081217059982E-07,4.350191593170166,4.0804891909829166E-07
-				rotation = 0,0,0,0.99999994
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				resPri = 0
-				dstg = 2
-				sqor = -1
-				sepI = 2
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, 13
-				attN = bottom, 11
-				mass = 0.0500000007
-				shielded = False
-				temp = 222.69747694748909
-				tempExt = 222.50531901254462
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/default
-				rTrf = adapterSmallMiniTall
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = liquidEngineMini.v2
-				cid = 4292099952
-				uid = 192396771
-				mid = 1828929763
-				persistentId = 216118434
-				launchID = 16
-				parent = 12
-				position = -5.29225907541786E-08,4.6626920700073242,3.1889257456896303E-07
-				rotation = -0.99999994,2.36717739E-08,1.3171321E-10,8.32985307E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 2
-				sqor = 3
-				sepI = 2
-				sidx = 0
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, 12
-				attN = bottom, -1
-				mass = 0.129999995
-				shielded = False
-				temp = 222.68636881490031
-				tempExt = 222.47162426467571
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = True
-				flag = Squad/Flags/default
-				rTrf = liquidEngineMini.v2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					independentThrottle = False
-					independentThrottlePercentage = 0
-					staged = True
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 19
-					manuallyOverridden = False
-					includeinDVCalcs = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ToggleThrottle
-						{
-							actionGroup = None
-						}
-					}
-					AXISGROUPS
-					{
-						independentThrottlePercentage
-						{
-							axisGroup = None
-							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							axisInverted = None
-							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-						}
-						thrustPercentage
-						{
-							axisGroup = None
-							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							axisInverted = None
-							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					activejettisonName = Shroud
-					isJettisoned = True
-					shroudHideOverride = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = True
-					gimbalLimiter = 100
-					currentShowToggles = False
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					gimbalActive = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-						TogglePitchAction
-						{
-							actionGroup = None
-						}
-						ToggleYawAction
-						{
-							actionGroup = None
-						}
-						ToggleRollAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					selectedVariant = Bare
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					animState = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
 			ACTIONGROUPS
 			{
 				Stage = True, 162177182.418302
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 205229272.441515
-				Brakes = False, 0
+				SAS = True, 218402590.091263
+				Brakes = True, 218401421.890637
 				Abort = False, 0
 				Custom01 = False, 0
 				Custom02 = False, 0
@@ -5130,9 +4923,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 3.56351848E-05
-				yaw = -7.09335745E-06
-				roll = 1.13344379E-06
+				pitch = 0.000277862273
+				yaw = -0.000118131502
+				roll = -0.0251125433
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -5153,236 +4946,36 @@ GAME
 				}
 			}
 		}
-		VESSEL
-		{
-			pid = 5223c9e53cf1469f8d61c4f2197ed4bc
-			persistentId = 4193925583
-			name = TANGO Debris
-			type = Debris
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = LaunchPad
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 3855.7148347198963
-			lct = 162175947.11472559
-			lastUT = 162179802.82956031
-			distanceTraveled = 482682.29902466061
-			root = 0
-			lat = 0.55693210565215634
-			lon = 147.57165579608017
-			alt = 29562.487584922463
-			hgt = 29562.4883
-			nrm = 0.0225660205,-0.965783775,-0.258365214
-			rot = -0.215774879,-0.71645534,0.575006962,-0.33090803
-			CoM = -7.12703913E-05,0.0824934095,-5.98691404E-05
-			stg = 2
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 2
-			PQSMax = 9
-			GroupOverride = 0
-			OverrideDefault = False,False,False,False
-			OverrideActionControl = 0,0,0,0
-			OverrideAxisControl = 0,0,0,0
-			OverrideGroupNames = ,,,
-			altDispState = DEFAULT
-			cPch = 0
-			cHdg = 0
-			cMod = 0
-			ORBIT
-			{
-				SMA = 632073.18053328421
-				ECC = 0.011531321968773253
-				INC = 0.6473140022488052
-				LPE = 191.11215099416975
-				LAN = 122.29292450515157
-				MNA = -1.4924368456825221
-				EPH = 162175960.97473302
-				REF = 12
-			}
-			PART
-			{
-				name = dockingPort3
-				cid = 4293805570
-				uid = 3787887904
-				mid = 2094360457
-				persistentId = 4127891133
-				launchID = 7
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				resPri = 0
-				dstg = 2
-				sqor = 2
-				sepI = 0
-				sidx = 0
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.0199999996
-				shielded = False
-				temp = 100.20391689481356
-				tempExt = 100.20292111605769
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = False
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = dockingPort3 (TANGO Debris)
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDockingNode
-					isEnabled = True
-					acquireForceTweak = 100
-					crossfeed = False
-					stagingEnabled = True
-					state = Ready
-					dockUId = 473194630
-					dockNodeIdx = 0
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						UndockAction
-						{
-							actionGroup = None
-						}
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-						MakeReferenceToggle
-						{
-							actionGroup = None
-						}
-						EnableXFeedAction
-						{
-							actionGroup = None
-						}
-						DisableXFeedAction
-						{
-							actionGroup = None
-						}
-						ToggleXFeedAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 168832083.1681
-				Gear = False, 0
-				Light = False, 0
-				RCS = False, 168685395.499683
-				SAS = True, 168833408.454535
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = ca423b89-b5a5-472a-ae1f-ae59e5bf356b
-			}
-			CTRLSTATE
-			{
-				pitch = -0.0228607226
-				yaw = 0.0191810951
-				roll = -0.0910177901
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-				AxisGroupsModule
-				{
-				}
-			}
-		}
 	}
 	LoaderInfo
 	{
-		ModuleManager v4.0.3.0 = True
-		DistantObject v1.9.1.14505 = True
-		Atmosphere v1.4.2.2 = True
-		CelestialShadows v1.4.2.2 = True
-		CityLights v1.4.2.2 = True
-		EVEManager v1.4.2.2 = True
-		PQSManager v1.4.2.2 = True
-		PartFX v1.4.2.2 = True
-		ShaderLoader v1.4.2.2 = True
-		Terrain v1.4.2.2 = True
-		TextureConfig v1.4.2.2 = True
-		Utils v1.4.2.2 = True
-		_BuildManager v1.4.2.2 = True
-		SmokeScreen v2.8.0.0 = True
-		scatterer v0.0.0.0 = True
-		DistantObject = True
-		EnvironmentalVisualEnhancements = True
-		RealPlume = True
-		RealPlume-Stock = True
-		SmokeScreen = True
-		StockVisualEnhancements = True
-		scatterer = True
-		ModuleManager.4.0.3.dll = True
-		ModuleManager.ConfigCache = True
-		ModuleManager.ConfigSHA = True
-		ModuleManager.Physics = True
-		ModuleManager.TechTree = True
+		ModuleManager v4.0.3.0 = False
+		DistantObject v1.9.1.14505 = False
+		Atmosphere v1.4.2.2 = False
+		CelestialShadows v1.4.2.2 = False
+		CityLights v1.4.2.2 = False
+		EVEManager v1.4.2.2 = False
+		PQSManager v1.4.2.2 = False
+		PartFX v1.4.2.2 = False
+		ShaderLoader v1.4.2.2 = False
+		Terrain v1.4.2.2 = False
+		TextureConfig v1.4.2.2 = False
+		Utils v1.4.2.2 = False
+		_BuildManager v1.4.2.2 = False
+		SmokeScreen v2.8.0.0 = False
+		scatterer v0.0.0.0 = False
+		DistantObject = False
+		EnvironmentalVisualEnhancements = False
+		RealPlume = False
+		RealPlume-Stock = False
+		SmokeScreen = False
+		StockVisualEnhancements = False
+		scatterer = False
+		ModuleManager.4.0.3.dll = False
+		ModuleManager.ConfigCache = False
+		ModuleManager.ConfigSHA = False
+		ModuleManager.Physics = False
+		ModuleManager.TechTree = False
 		Hyperspace v1.0.0.0 = False
 		ClickThroughBlocker v0.1.7.2 / v1.0.0.0 = False
 		aaa_Toolbar v1.7.22.2 = False
@@ -6209,12 +5802,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Rodton Kerman
-			gender = Male
+			name = Mibro Kerman
+			gender = Female
 			type = Unowned
 			trait = Tourist
-			brave = 0.959039569
-			dumb = 0.910052896
+			brave = 0.150717363
+			dumb = 0.946014822
 			badS = False
 			veteran = False
 			tour = False
@@ -6244,12 +5837,257 @@ GAME
 		}
 		KERBAL
 		{
-			name = Jean Kerman
+			name = Lagas Kerman
 			gender = Female
 			type = Unowned
 			trait = Tourist
-			brave = 0.971434176
-			dumb = 0.581643045
+			brave = 0.97415036
+			dumb = 0.037351165
+			badS = True
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Barby Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.377099276
+			dumb = 0.485389739
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Ludman Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.538494468
+			dumb = 0.495562613
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Kaberry Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.539120317
+			dumb = 0.848835528
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Judith Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.384205878
+			dumb = 0.012169023
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jolas Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.0424058735
+			dumb = 0.146395013
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Barlo Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.172484338
+			dumb = 0.986664414
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Dilemy Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.0996206179
+			dumb = 0.706168056
 			badS = False
 			veteran = False
 			tour = False
