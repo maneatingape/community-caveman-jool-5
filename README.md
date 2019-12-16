@@ -7,6 +7,10 @@ Shared save game for the [Community Caveman Jool 5 Challenge](https://forum.kerb
 
 # Changelog
 
+## [Version 28](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v28) - 2019-12-16
+
+- KILO and Jeb captured into Kerbin orbit
+
 ## [Version 27](https://github.com/maneatingape/community-caveman-jool-5/releases/tag/v27) - 2019-12-06
 
 - KILO and Jeb approaching Kerbin intercept
